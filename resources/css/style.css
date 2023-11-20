@@ -9,7 +9,7 @@ html {
   width: 100%;
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
-  height: 100vh;
+  min-height: 100vh;
 }
 .nav-bar {
   height: 5.75rem;
@@ -190,4 +190,49 @@ html {
   height: 1.5rem;
   background-color: hsl(0, 0%, 83%);
   margin: auto;
+}
+#main {
+  height: 100%;
+  font-size: 12px;
+}
+#hero {
+  height: 30rem;
+  background-color: #d6f0fa;
+  width: auto;
+
+}
+.intro {
+  width: 80%;
+  height: inherit;
+  background-color: #ffffff;
+  height: 100%;
+  margin: auto;
+  border-radius: 2px;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.2);
+  position: relative;
+  top: 1.57rem;
+}
+#links {
+  width: 100%;
+  /* border: 1px solid saddlebrown; */
+  height: 2.4em;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+#links ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+#links ul a {
+  text-decoration: none;
+}
+#stardew-valley {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: 8rem 3rem;
+}
+#img-valley {
+  grid-area: 1 / span 6;
 }
