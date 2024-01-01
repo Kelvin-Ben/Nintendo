@@ -3,331 +3,368 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Damion&family=Montserrat:wght@200;300;400;500&family=Roboto+Mono&family=Roboto:wght@200;300;400;700&family=Rubik&family=Tinos:ital@1&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./resources/css/style.css" />
     <title>Nintendo</title>
   </head>
   <body>
-    <div id="container">
-      <header class="nav-bar">
-        <div class="header upper-part">
-          <div class="logo"><span>Nintendo</span></div>
-          <div class="other">
-            <nav class="left-nav">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                class="header-icon"
-                style="vertical-align: middle"
-              >
-                <title>magnify</title>
+    <header class="header">
+      <nav class="upper-nav">
+        <img
+          class="logo-img"
+          src="./resources/images/Nintendo_logo.svg"
+          alt="Nintendo logo"
+        />
+        <div class="nav-left">
+          <div class="search">
+            <span class="search__icon">
+              <svg xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"
                 />
               </svg>
-              <input
-                type="text"
-                value="Search games, hardware, news, etc"
-                class="search-bar"
-              />
-              <p>
-                All categories
-                <span
-                  ><svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    class="header-icon"
-                    style="vertical-align: middle"
-                  >
-                    <title>chevron-down</title>
-                    <path
-                      d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
-                    /></svg
-                ></span>
-              </p>
-            </nav>
-            <nav class="right-nav">
-              <ul class="nav">
-                <li>
-                  <a href="#">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      class="header-icon"
-                      style="vertical-align: middle"
-                    >
-                      <title>tooltip-question</title>
-                      <path
-                        d="M20 2H4C3.47 2 2.96 2.21 2.59 2.59C2.21 2.96 2 3.47 2 4V16C2 16.53 2.21 17.04 2.59 17.41C2.96 17.79 3.47 18 4 18H8L12 22L16 18H20C20.53 18 21.04 17.79 21.41 17.41S22 16.53 22 16V4C22 3.47 21.79 2.96 21.41 2.59C21.04 2.21 20.53 2 20 2M10.05 6.04C10.59 5.68 11.3 5.5 12.19 5.5C13.13 5.5 13.88 5.71 14.42 6.12C14.96 6.54 15.23 7.1 15.23 7.8C15.23 8.24 15.08 8.63 14.79 9C14.5 9.36 14.12 9.64 13.66 9.85C13.4 10 13.23 10.15 13.14 10.32C13.05 10.5 13 10.72 13 11H11C11 10.5 11.1 10.16 11.29 9.92C11.5 9.68 11.84 9.4 12.36 9.08C12.62 8.94 12.83 8.76 13 8.54C13.14 8.33 13.22 8.08 13.22 7.8C13.22 7.5 13.13 7.28 12.95 7.11C12.77 6.93 12.5 6.85 12.19 6.85C11.92 6.85 11.7 6.92 11.5 7.06C11.34 7.2 11.24 7.41 11.24 7.69H9.27C9.22 7 9.5 6.4 10.05 6.04M11 14V12H13V14Z"
-                      />
-                    </svg>
-                    <span>Support</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      class="header-icon"
-                      style="vertical-align: middle"
-                    >
-                      <title>heart</title>
-                      <path
-                        d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"
-                      />
-                    </svg>
-                    <span>Wish List</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      class="header-icon"
-                      style="vertical-align: middle"
-                    >
-                      <title>cart</title>
-                      <path
-                        d="M17,18C15.89,18 15,18.89 15,20A2,2 0 0,0 17,22A2,2 0 0,0 19,20C19,18.89 18.1,18 17,18M1,2V4H3L6.6,11.59L5.24,14.04C5.09,14.32 5,14.65 5,15A2,2 0 0,0 7,17H19V15H7.42A0.25,0.25 0 0,1 7.17,14.75C7.17,14.7 7.18,14.66 7.2,14.63L8.1,13H15.55C16.3,13 16.96,12.58 17.3,11.97L20.88,5.5C20.95,5.34 21,5.17 21,5A1,1 0 0,0 20,4H5.21L4.27,2M7,18C5.89,18 5,18.89 5,20A2,2 0 0,0 7,22A2,2 0 0,0 9,20C9,18.89 8.1,18 7,18Z"
-                      />
-                    </svg>
-                    <span>Cart</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      class="header-icon"
-                      style="vertical-align: middle"
-                    >
-                      <title>account</title>
-                      <path
-                        d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z"
-                      />
-                    </svg>
-                    <span>Log in / Sign up</span>
-                  </a>
-                </li>
-              </ul>
-            </nav>
+            </span>
+            <input type="text" value="Search" class="search__input" />
+          </div>
+          <div class="category">
+            <p class="category__text">All categories</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="category__icon"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M16.939 7.939 12 12.879l-4.939-4.94-2.122 2.122L12 17.121l7.061-7.06z"
+              ></path>
+            </svg>
           </div>
         </div>
-        <div class="header lower-part">
-          <ul class="lower-nav">
-            <li>
-              <a href="#">
+        <nav class="nav-right">
+          <ul class="navigation">
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="15"
-                  viewBox="0 0 24 24"
-                  style="vertical-align: middle rgba(0, 0, 0, 1)"
+                  class="navigation__icon"
+                  style="vertical-align: middle"
                 >
                   <path
-                    d="m12.954 11.616 2.957-2.957L6.36 3.291c-.633-.342-1.226-.39-1.746-.016l8.34 8.341zm3.461 3.462 3.074-1.729c.6-.336.929-.812.929-1.34 0-.527-.329-1.004-.928-1.34l-2.783-1.563-3.133 3.132 2.841 2.84zM4.1 4.002c-.064.197-.1.417-.1.658v14.705c0 .381.084.709.236.97l8.097-8.098L4.1 4.002zm8.854 8.855L4.902 20.91c.154.059.32.09.495.09.312 0 .637-.092.968-.276l9.255-5.197-2.666-2.67z"
-                  ></path>
-                </svg>
-                <span>My Nintendo Store</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="15"
-                  viewBox="0 0 24 24"
-                  style="vertical-align: middle rgba(0, 0, 0, 1)"
-                >
-                  <path
-                    d="M16.939 7.939 12 12.879l-4.939-4.94-2.122 2.122L12 17.121l7.061-7.06z"
-                  ></path>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="15"
-                  viewBox="0 0 24 24"
-                >
-                  <title>gamepad</title>
-                  <path
-                    d="M16.5,9L13.5,12L16.5,15H22V9M9,16.5V22H15V16.5L12,13.5M7.5,9H2V15H7.5L10.5,12M15,7.5V2H9V7.5L12,10.5L15,7.5Z"
+                    d="M20 2H4C3.47 2 2.96 2.21 2.59 2.59C2.21 2.96 2 3.47 2 4V16C2 16.53 2.21 17.04 2.59 17.41C2.96 17.79 3.47 18 4 18H8L12 22L16 18H20C20.53 18 21.04 17.79 21.41 17.41S22 16.53 22 16V4C22 3.47 21.79 2.96 21.41 2.59C21.04 2.21 20.53 2 20 2M10.05 6.04C10.59 5.68 11.3 5.5 12.19 5.5C13.13 5.5 13.88 5.71 14.42 6.12C14.96 6.54 15.23 7.1 15.23 7.8C15.23 8.24 15.08 8.63 14.79 9C14.5 9.36 14.12 9.64 13.66 9.85C13.4 10 13.23 10.15 13.14 10.32C13.05 10.5 13 10.72 13 11H11C11 10.5 11.1 10.16 11.29 9.92C11.5 9.68 11.84 9.4 12.36 9.08C12.62 8.94 12.83 8.76 13 8.54C13.14 8.33 13.22 8.08 13.22 7.8C13.22 7.5 13.13 7.28 12.95 7.11C12.77 6.93 12.5 6.85 12.19 6.85C11.92 6.85 11.7 6.92 11.5 7.06C11.34 7.2 11.24 7.41 11.24 7.69H9.27C9.22 7 9.5 6.4 10.05 6.04M11 14V12H13V14Z"
                   />
                 </svg>
-                <span>Games</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="15"
-                  viewBox="0 0 24 24"
-                  style="vertical-align: middle rgba(0, 0, 0, 1)"
-                >
-                  <path
-                    d="M16.939 7.939 12 12.879l-4.939-4.94-2.122 2.122L12 17.121l7.061-7.06z"
-                  ></path>
-                </svg>
+                <span>Support</span>
               </a>
             </li>
-            <li>
-              <a href="#">
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="15"
                   viewBox="0 0 24 24"
+                  class="navigation__icon"
+                  style="vertical-align: middle"
                 >
-                  <title>nintendo-switch</title>
+                  <!-- <title>heart</title> -->
                   <path
-                    d="M10.04,20.4H7.12C6.19,20.4 5.3,20 4.64,19.36C4,18.7 3.6,17.81 3.6,16.88V7.12C3.6,6.19 4,5.3 4.64,4.64C5.3,4 6.19,3.62 7.12,3.62H10.04V20.4M7.12,2A5.12,5.12 0 0,0 2,7.12V16.88C2,19.71 4.29,22 7.12,22H11.65V2H7.12M5.11,8C5.11,9.04 5.95,9.88 7,9.88C8.03,9.88 8.87,9.04 8.87,8C8.87,6.96 8.03,6.12 7,6.12C5.95,6.12 5.11,6.96 5.11,8M17.61,11C18.72,11 19.62,11.89 19.62,13C19.62,14.12 18.72,15 17.61,15C16.5,15 15.58,14.12 15.58,13C15.58,11.89 16.5,11 17.61,11M16.88,22A5.12,5.12 0 0,0 22,16.88V7.12C22,4.29 19.71,2 16.88,2H13.65V22H16.88Z"
+                    d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"
                   />
                 </svg>
-                <span>Nintendo Switch</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="15"
-                  viewBox="0 0 24 24"
-                  style="vertical-align: middle rgba(0, 0, 0, 1)"
-                >
-                  <path
-                    d="M16.939 7.939 12 12.879l-4.939-4.94-2.122 2.122L12 17.121l7.061-7.06z"
-                  ></path>
-                </svg>
+                <span>Wish List</span>
               </a>
             </li>
-            <li>
-              <a href="#">
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="15"
                   viewBox="0 0 24 24"
-                  style="vertical-align: middle rgba(0, 0, 0, 1)"
+                  class="navigation__icon"
+                  style="vertical-align: middle"
                 >
+                  <!-- <title>cart</title> -->
                   <path
-                    d="M19.875 3H4.125C2.953 3 2 3.897 2 5v14c0 1.103.953 2 2.125 2h15.75C21.047 21 22 20.103 22 19V5c0-1.103-.953-2-2.125-2zm0 16H4.125c-.057 0-.096-.016-.113-.016-.007 0-.011.002-.012.008L3.988 5.046c.007-.01.052-.046.137-.046h15.75c.079.001.122.028.125.008l.012 13.946c-.007.01-.052.046-.137.046z"
-                  ></path>
-                  <path
-                    d="M6 7h6v6H6zm7 8H6v2h12v-2h-4zm1-4h4v2h-4zm0-4h4v2h-4z"
-                  ></path>
+                    d="M17,18C15.89,18 15,18.89 15,20A2,2 0 0,0 17,22A2,2 0 0,0 19,20C19,18.89 18.1,18 17,18M1,2V4H3L6.6,11.59L5.24,14.04C5.09,14.32 5,14.65 5,15A2,2 0 0,0 7,17H19V15H7.42A0.25,0.25 0 0,1 7.17,14.75C7.17,14.7 7.18,14.66 7.2,14.63L8.1,13H15.55C16.3,13 16.96,12.58 17.3,11.97L20.88,5.5C20.95,5.34 21,5.17 21,5A1,1 0 0,0 20,4H5.21L4.27,2M7,18C5.89,18 5,18.89 5,20A2,2 0 0,0 7,22A2,2 0 0,0 9,20C9,18.89 8.1,18 7,18Z"
+                  />
                 </svg>
-                <span>News and Event</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="15"
-                  viewBox="0 0 24 24"
-                  style="vertical-align: middle rgba(0, 0, 0, 1)"
-                >
-                  <path
-                    d="M16.939 7.939 12 12.879l-4.939-4.94-2.122 2.122L12 17.121l7.061-7.06z"
-                  ></path>
-                </svg>
+                <span>Cart</span>
               </a>
             </li>
-            <li>
-              <a href="#">
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="15"
                   viewBox="0 0 24 24"
-                  style="vertical-align: middle rgba(0, 0, 0, 1)"
+                  class="navigation__icon"
+                  style="vertical-align: middle"
                 >
-                  <path d="M7 6v12l10-6z"></path>
-                </svg>
-                <span>Play Nintendo</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="15"
-                  viewBox="0 0 24 24"
-                  style="vertical-align: middle rgba(0, 0, 0, 1)"
-                >
+                  <!-- <title>account</title> -->
                   <path
-                    d="M16.939 7.939 12 12.879l-4.939-4.94-2.122 2.122L12 17.121l7.061-7.06z"
-                  ></path>
+                    d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z"
+                  />
                 </svg>
+                Log in / Sign up
               </a>
+            </li>
+            <li class="navigation__item">
+              <img
+                src="./resources/images/FlagUsaIconRegionSelect.webp"
+                alt="flag of usa"
+                width="20px"
+              />
             </li>
           </ul>
+        </nav>
+      </nav>
+      <nav class="middle">
+        <ul class="nav">
+          <li class="nav__list">
+            <a href="#" class="nav__link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="nav__icon"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m12.954 11.616 2.957-2.957L6.36 3.291c-.633-.342-1.226-.39-1.746-.016l8.34 8.341zm3.461 3.462 3.074-1.729c.6-.336.929-.812.929-1.34 0-.527-.329-1.004-.928-1.34l-2.783-1.563-3.133 3.132 2.841 2.84zM4.1 4.002c-.064.197-.1.417-.1.658v14.705c0 .381.084.709.236.97l8.097-8.098L4.1 4.002zm8.854 8.855L4.902 20.91c.154.059.32.09.495.09.312 0 .637-.092.968-.276l9.255-5.197-2.666-2.67z"
+                ></path>
+              </svg>
+              <span class="header__text">My Nintendo Store</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="nav__icon"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16.939 7.939 12 12.879l-4.939-4.94-2.122 2.122L12 17.121l7.061-7.06z"
+                ></path>
+              </svg>
+            </a>
+          </li>
+          <li class="nav__list">
+            <a href="#" class="nav__link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                class="nav__icon"
+              >
+                <title>snowflake</title>
+                <path
+                  d="M20.79,13.95L18.46,14.57L16.46,13.44V10.56L18.46,9.43L20.79,10.05L21.31,8.12L19.54,7.65L20,5.88L18.07,5.36L17.45,7.69L15.45,8.82L13,7.38V5.12L14.71,3.41L13.29,2L12,3.29L10.71,2L9.29,3.41L11,5.12V7.38L8.5,8.82L6.5,7.69L5.92,5.36L4,5.88L4.47,7.65L2.7,8.12L3.22,10.05L5.55,9.43L7.55,10.56V13.45L5.55,14.58L3.22,13.96L2.7,15.89L4.47,16.36L4,18.12L5.93,18.64L6.55,16.31L8.55,15.18L11,16.62V18.88L9.29,20.59L10.71,22L12,20.71L13.29,22L14.7,20.59L13,18.88V16.62L15.5,15.17L17.5,16.3L18.12,18.63L20,18.12L19.53,16.35L21.3,15.88L20.79,13.95M9.5,10.56L12,9.11L14.5,10.56V13.44L12,14.89L9.5,13.44V10.56Z"
+                />
+              </svg>
+              <span class="header__text">Holiday Gift Guide</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="nav__icon"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16.939 7.939 12 12.879l-4.939-4.94-2.122 2.122L12 17.121l7.061-7.06z"
+                ></path>
+              </svg>
+            </a>
+          </li>
+          <li class="nav__list">
+            <a href="#" class="nav__link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="nav__icon"
+                viewBox="0 0 24 24"
+              >
+                <title>gamepad</title>
+                <path
+                  d="M16.5,9L13.5,12L16.5,15H22V9M9,16.5V22H15V16.5L12,13.5M7.5,9H2V15H7.5L10.5,12M15,7.5V2H9V7.5L12,10.5L15,7.5Z"
+                />
+              </svg>
+              <span class="header__text">Games</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="nav__icon"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16.939 7.939 12 12.879l-4.939-4.94-2.122 2.122L12 17.121l7.061-7.06z"
+                ></path>
+              </svg>
+            </a>
+          </li>
+          <li class="nav__list">
+            <a href="#" class="nav__link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                class="nav__icon"
+              >
+                <title>nintendo-switch</title>
+                <path
+                  d="M10.04,20.4H7.12C6.19,20.4 5.3,20 4.64,19.36C4,18.7 3.6,17.81 3.6,16.88V7.12C3.6,6.19 4,5.3 4.64,4.64C5.3,4 6.19,3.62 7.12,3.62H10.04V20.4M7.12,2A5.12,5.12 0 0,0 2,7.12V16.88C2,19.71 4.29,22 7.12,22H11.65V2H7.12M5.11,8C5.11,9.04 5.95,9.88 7,9.88C8.03,9.88 8.87,9.04 8.87,8C8.87,6.96 8.03,6.12 7,6.12C5.95,6.12 5.11,6.96 5.11,8M17.61,11C18.72,11 19.62,11.89 19.62,13C19.62,14.12 18.72,15 17.61,15C16.5,15 15.58,14.12 15.58,13C15.58,11.89 16.5,11 17.61,11M16.88,22A5.12,5.12 0 0,0 22,16.88V7.12C22,4.29 19.71,2 16.88,2H13.65V22H16.88Z"
+                />
+              </svg>
+              <span class="header__text">Nintendo Switch</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="15"
+                viewBox="0 0 24 24"
+                class="nav__icon"
+              >
+                <path
+                  d="M16.939 7.939 12 12.879l-4.939-4.94-2.122 2.122L12 17.121l7.061-7.06z"
+                ></path>
+              </svg>
+            </a>
+          </li>
+          <li class="nav__list">
+            <a href="#" class="nav__link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="15"
+                viewBox="0 0 24 24"
+                class="nav__icon"
+              >
+                <path
+                  d="M19.875 3H4.125C2.953 3 2 3.897 2 5v14c0 1.103.953 2 2.125 2h15.75C21.047 21 22 20.103 22 19V5c0-1.103-.953-2-2.125-2zm0 16H4.125c-.057 0-.096-.016-.113-.016-.007 0-.011.002-.012.008L3.988 5.046c.007-.01.052-.046.137-.046h15.75c.079.001.122.028.125.008l.012 13.946c-.007.01-.052.046-.137.046z"
+                ></path>
+                <path
+                  d="M6 7h6v6H6zm7 8H6v2h12v-2h-4zm1-4h4v2h-4zm0-4h4v2h-4z"
+                ></path>
+              </svg>
+              <span class="header__text">News and Event</span>
+              <!-- <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="15"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16.939 7.939 12 12.879l-4.939-4.94-2.122 2.122L12 17.121l7.061-7.06z"
+                ></path>
+              </svg> -->
+            </a>
+          </li>
+          <li class="nav__list">
+            <a href="#" class="nav__link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="nav__icon"
+                viewBox="0 0 24 24"
+              >
+                <path d="M7 6v12l10-6z"></path>
+              </svg>
+              <span class="header__text">Play Nintendo</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="nav__icon"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16.939 7.939 12 12.879l-4.939-4.94-2.122 2.122L12 17.121l7.061-7.06z"
+                ></path>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="lower">
+        <div class="nav__shipping">
+          <p class="nav__shipping--text">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="nav__shipping--icon"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19.15 8a2 2 0 0 0-1.72-1H15V5a1 1 0 0 0-1-1H4a2 2 0 0 0-2 2v10a2 2 0 0 0 1 1.73 3.49 3.49 0 0 0 7 .27h3.1a3.48 3.48 0 0 0 6.9 0 2 2 0 0 0 2-2v-3a1.07 1.07 0 0 0-.14-.52zM15 9h2.43l1.8 3H15zM6.5 19A1.5 1.5 0 1 1 8 17.5 1.5 1.5 0 0 1 6.5 19zm10 0a1.5 1.5 0 1 1 1.5-1.5 1.5 1.5 0 0 1-1.5 1.5z"
+              ></path>
+            </svg>
+            <span><strong>Free shipping</strong> on orders $50 or more.</span>
+            <span class="nav__shipping--text-terms"
+              ><a href="#">Restrictions apply</a></span
+            >
+          </p>
         </div>
-      </header>
-      <div class="middle">
-        <div>
-          <div id="shipping">
-            <p>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="20"
-                viewBox="0 0 24 24"
-                style="vertical-align: middle"
+        <span class="lower__vertical-line"></span>
+        <div class="nav__points">
+          <p class="nav__points--text">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="nav__points--icon"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19 4h-2V2h-2v2H9V2H7v2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm-4.588 15-2.449-1.288L9.514 19l.468-2.728L8 14.342l2.738-.398 1.225-2.48 1.225 2.48 2.738.398-1.981 1.931.467 2.727zM19 9H5V7h14v2z"
+              ></path>
+            </svg>
+            <span
+              >Earn
+              <strong class="nav__points--text-points"
+                >My Nintendo Points</strong
               >
-                <path
-                  d="M19.15 8a2 2 0 0 0-1.72-1H15V5a1 1 0 0 0-1-1H4a2 2 0 0 0-2 2v10a2 2 0 0 0 1 1.73 3.49 3.49 0 0 0 7 .27h3.1a3.48 3.48 0 0 0 6.9 0 2 2 0 0 0 2-2v-3a1.07 1.07 0 0 0-.14-.52zM15 9h2.43l1.8 3H15zM6.5 19A1.5 1.5 0 1 1 8 17.5 1.5 1.5 0 0 1 6.5 19zm10 0a1.5 1.5 0 1 1 1.5-1.5 1.5 1.5 0 0 1-1.5 1.5z"
-                ></path>
-              </svg>
-              <strong>free shipping</strong> on orders $50 or more.
-              <span><a href="#">Restrictions apply</a></span>
-            </p>
-          </div>
-          <span id="vertical-line"></span>
-          <div id="points">
-            <p>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="20"
-                viewBox="0 0 24 24"
-                style="fill: rgba(0, 0, 0, 1); vertical-align: middle"
-              >
-                <path
-                  d="M19 4h-2V2h-2v2H9V2H7v2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm-4.588 15-2.449-1.288L9.514 19l.468-2.728L8 14.342l2.738-.398 1.225-2.48 1.225 2.48 2.738.398-1.981 1.931.467 2.727zM19 9H5V7h14v2z"
-                ></path>
-              </svg>
-              <span
-                >Earn <strong>My Nintendo Points</strong> on digital games</span
-              >
-            </p>
+              on digital games</span
+            >
+          </p>
+        </div>
+      </div>
+    </header>
+    <!-- <section id="main">
+      <div id="hero">
+        <div class="intro">
+          <nav id="links">
+            <ul>
+              <li>
+                <a href="#">
+                  Store
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      style="vertical-align: middle"
+                    >
+                      <path
+                        d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"
+                      ></path>
+                    </svg>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Games
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      style="vertical-align: middle"
+                    >
+                      <path
+                        d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"
+                      ></path>
+                    </svg>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="#"> Stardew Valley </a>
+              </li>
+            </ul>
+          </nav>
+          <div id="stardew-valley">
+            <img
+              src="./resources/images/stardew-valley.png"
+              alt="Stardew valley"
+              id="img-valley"
+            />
           </div>
         </div>
       </div>
-      <section id="main">
-        <div id="hero">
-          <div class="intro">
-            <nav id="links">
-              <ul>
-                <li>
-                  <a href="#">
-                    Store <span>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="vertical-align: middle;"><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg>
-                    </span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    Games <span>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="vertical-align: middle;"><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg>
-                    </span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    Stardew Valley 
-                  </a>
-                </li>
-              </ul>
-            </nav>
-            <div id="stardew-valley">
-              <img src="./resources/images/stardew-valley.png" alt="Stardew valley" id="img-valley">
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
+    </section> -->
   </body>
 </html>
