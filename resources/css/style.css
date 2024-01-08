@@ -229,19 +229,84 @@ body {
     width: 2rem;
     margin: 0 0.5rem; }
 
+.carousel {
+  border: 1px solid salmon;
+  position: relative;
+  width: 70rem; }
+  .carousel__track-container {
+    border: 1px solid salmon;
+    background-color: aqua;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 100%; }
+    .carousel__track-container:hover {
+      cursor: progress; }
+  .carousel__track {
+    list-style: none; }
+  .carousel__slide {
+    position: absolute;
+    top: 0;
+    bottom: 0; }
+  .carousel__image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%; }
+  .carousel__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 0;
+    height: 5rem;
+    width: 5rem;
+    z-index: 10; }
+    .carousel__button:hover {
+      cursor: pointer; }
+    .carousel__button--right {
+      fill: #fff;
+      right: 0; }
+    .carousel__button--left {
+      fill: #fff; }
+  .carousel__indicator {
+    background-image: url("../../resources/images/stardew-valley.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 10rem;
+    height: 5rem;
+    margin: 1rem 0; }
+    .carousel__indicator--image {
+      max-width: 100%; }
+    .carousel__indicator:hover {
+      cursor: pointer;
+      border-bottom: .5rem solid red; }
+
+.stardew--price {
+  border: 1px solid salmon; }
+
 #hero {
-  width: 100%;
-  display: flex;
-  height: 55rem;
-  background-color: #d6f0fa; }
+  background-color: #d6f0fa;
+  position: relative;
+  z-index: 1; }
 
 .intro {
-  width: 114rem;
-  margin: 2rem auto 0rem;
+  max-width: 124rem;
+  margin: 0 auto;
+  border: 1px solid red;
   height: 56rem;
+  padding: 3rem;
   background-color: #fff;
   box-shadow: 0.5rem 0.5rem 1rem rgba(67, 66, 66, 0.2);
-  border-radius: 10px; }
+  border-radius: 10px;
+  transform: translateY(3rem); }
+
+#stardew-valley {
+  width: 107rem;
+  height: 100%;
+  border: 1px solid green;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  margin: 0 auto; }
 
 .breadcrumb {
   display: flex;
