@@ -4,11 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile-sass": "node-sass sass/main.scss resources/css/style.css -w"
+    "compile-sass": "node-sass sass/main.scss resources/css/style.css -w",
+    "start": "lite-server"
   },
   "author": "Kelvin-Ben",
   "license": "ISC",
   "devDependencies": {
+    "lite-server": "^2.6.1",
     "node-sass": "^9.0.0"
   }
 }
