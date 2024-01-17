@@ -5,6 +5,7 @@ const prevButton = document.querySelector(".button--left");
 const dotsNav = document.querySelector(".carousel__nav");
 const dots = Array.from(dotsNav.children);
 const slideWidth = slides[0].getBoundingClientRect().width;
+const navButton = document.querySelector('.carousel__nav--button');
 
 // arrange the slides next to one another
 const setSlidePosition = ((slide, index) => {
@@ -22,8 +23,8 @@ const moveToSlide = (track, currentSlide, targetSlide) => {
 
 
 const updateDot = (currentDot, targetDot) => {
-  currentDot.classList.remove('current-slide');
-  targetDot.classList.add('current-slide');
+  currentDot.classList.remove('current-button');
+  targetDot.classList.add('current-button');
 }
 // when i click right, move slides to the left
 nextButton.addEventListener("click", (e) => {
@@ -60,4 +61,14 @@ dotsNav.addEventListener('click', e => {
   moveToSlide(track, currentSlide, targetSlide);
 
   updateDot(currentDot, targetDot);
+
 })
+// navButton.addEventListener('click', e => {
+//   const targetIndex = dots.findIndex(dot => dot === targetDot);
+//   if (targetIndex === 0) {
+//     prevButton.classList.add('is-hidden');
+//     nextButton.classList.remove('is-hidden');
+//   }
+
+
+// })
