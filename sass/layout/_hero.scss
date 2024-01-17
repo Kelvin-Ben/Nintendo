@@ -5,9 +5,10 @@
   // border: 1px solid red;
 }
 .intro {
-  max-width: $grid-width;
+  // max-width: $grid-width;
+  width: $grid-width;
   margin: 0 auto;
-  border: 1px solid red;
+  // border: 1px solid red;
   height: 56rem;
   padding: 3rem;
   background-color: $color-white;
@@ -16,13 +17,12 @@
   transform: translateY(3rem);
 }
 #stardew-valley {
-  width: 107rem;
-  height: 100%;
-  border: 1px solid green;
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  margin: 0 auto;
-  // gap: 1rem;
+  width: 95%;
+  // border: 1px solid green;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: .5rem auto;
 }
 .breadcrumb {
   display: flex;
@@ -45,5 +45,45 @@
       display: inline;
       margin: 0.5rem;
     }
+  }
+}
+.stardew--price {
+  // border: 1px solid red;
+  width: 40%;
+}
+.stardew-text {
+  text-transform: capitalize;
+  border-left: 2px solid $color-primary-red;
+  width: auto;
+  height: 1.5rem;
+  padding-left: .5rem;
+  font-size: 1.3rem;
+  // margin-bottom: 2rem;
+  font-weight: 200;
+}
+.secondary-heading {
+  font-size: 2.6rem;
+  text-transform: capitalize;
+  margin: 2rem 0rem;
+}
+.price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.stardew-icon {
+  fill: $color-primary-red;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+.stardew--points {
+  display: flex;
+  align-items: center;
+
+  &__icon {
+    fill: goldenrod;
   }
 }
