@@ -1,0 +1,28 @@
+.btn {
+  background-color: $color-primary-red;
+  &, &:link, &:visited {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: $color-white;
+    margin: 2rem 0;
+    height: 5rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    width: 100%;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border: none;
+    transition: transform .2s ease-in;
+  }
+  &-icon {
+    fill: $color-white;
+    margin-right: 1.3rem;
+  }
+  &:hover {
+    transform: scaleX(1.1);
+    background-color: rgba($color-primary-red-dark, 1);
+  }
+
+}
