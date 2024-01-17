@@ -1,25 +1,10 @@
 .carousel {
-  border: 1px solid salmon;
+  // border: 1px solid salmon;
   position: relative;
-  width: 70rem;
-  // height: 20rem;
-  // &:hover {
-  //   &__button {
-  //     opacity: 1;
-  //   }
-  // }
-
-  &__track-container {
-    border: 1px solid salmon;
-    background-color: aqua;
-    text-align: center;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    &:hover {
-      cursor: progress;
-    }
-  }
+  width: 55%;
+  overflow-x: hidden;
+  // margin-right: 5rem;
+  
 
   &__track {
     // width: 100%;
@@ -38,10 +23,36 @@
     object-fit: cover;
     width: 100%;
     height: 100%;
+    border-radius: 2rem;
   }
+  &__indicator {
+    width: 9rem;
+    height: 5rem;
+    margin: 1rem 0;
+    border-radius: 1rem;
+    border: transparent;
+    // background-color: salmon;
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+    &--image {
+      max-width: 100%;
+    }
+    &:hover {
+      border-bottom: 3px solid $color-primary-red;
+      cursor: pointer;
+    }
+  }
+  &__nav {
+    // background-color: aquamarine;
+    display: flex;
+    flex-direction: row;
+    width: 80rem;
+    // border: 1px solid blue;
+    position: relative;
 
-  &__button {
-    // opacity: 0;
+    &--button {
+      opacity: 0;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -50,37 +61,135 @@
     height: 5rem;
     width: 5rem;
     z-index: 10;
+    transition: opacity .6s ease-in;
+    background-color: rgba($color-dark, .3);
+    border-radius: 1rem;
     &:hover {
       cursor: pointer;
     }
+    }
 
-    &--right {
-      fill: $color-white;
-      right: 0;
-    }
-    &--left {
-      fill: $color-white;
-    }
-  }
-  &__indicator {
-    background-image: url("../../resources/images/stardew-valley.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 10rem;
-    height: 5rem;
-    margin: 1rem 0;
-
-    &--image {
-      max-width: 100%;
-    }
     &:hover {
       cursor: pointer;
-      border-bottom: 0.5rem solid red;
+      .carousel__nav--button {
+        opacity: 1;
+      }
     }
   }
 }
+.track-container {
+  // border: 1px solid salmon;
+  // background-color: aqua;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  height: 30rem;
+  overflow: hidden;
+  
+  &:hover {
+    cursor: progress;
 
-.stardew--price {
-  // display: none;
-  border: 1px solid salmon;
+    .track-container__button {
+      opacity: 1;
+      transition: opacity .5s;
+    }
+  }
+
+  &__button {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 0;
+    height: 5rem;
+    width: 5rem;
+    z-index: 10;
+    transition: opacity .6s ease-in;
+    &:hover {
+      cursor: pointer;
+    }
+  
+  }
+}
+.is-hidden {
+  display: none;
+}
+// style for the buttons
+.btn-1 {
+  background-image: url('../../resources/images/1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: .5;
+  // border: 1px solid red;
+}
+.btn-2 {
+  background-image: url('../../resources/images/2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: .5;
+}
+.btn-3 {
+  background-image: url('../../resources/images/3.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: .5;
+}
+.btn-4 {
+  background-image: url('../../resources/images/4.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: .5;
+}
+.btn-5 {
+  background-image: url('../../resources/images/5.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: .5;
+}
+.btn-6 {
+  background-image: url('../../resources/images/6.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: .5;
+}
+.btn-7 {
+  background-image: url('../../resources/images/7.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: .5;
+}
+// end of styling the button
+
+.button--right {
+  fill: $color-white;
+  right: 0rem;
+  position: absolute;
+}
+.button--left {
+  fill: $color-white;
+  left: 0rem;
+}
+.nav--right {
+  right: 31rem;
+  fill: $color-white;
+}
+.esrb {
+  width: 80%;
+  height: 8rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  // margin-top: .5rem;
+  // border: 1px solid red;
+
+
+  &__image {
+    width: 5rem;
+  }
+
+  &__text {
+    width: 86%;
+  }
 }
