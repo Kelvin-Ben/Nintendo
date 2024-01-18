@@ -276,7 +276,7 @@ body {
       height: 5rem;
       width: 5rem;
       z-index: 10;
-      transition: opacity .6s ease-in;
+      transition: opacity 0.6s ease-in;
       background-color: rgba(67, 66, 66, 0.3);
       border-radius: 1rem; }
       .carousel__nav--button:hover {
@@ -296,7 +296,7 @@ body {
     cursor: progress; }
     .track-container:hover .track-container__button {
       opacity: 1;
-      transition: opacity .5s; }
+      transition: opacity 0.5s; }
   .track-container__button {
     opacity: 0;
     position: absolute;
@@ -307,7 +307,7 @@ body {
     height: 5rem;
     width: 5rem;
     z-index: 10;
-    transition: opacity .6s ease-in; }
+    transition: opacity 0.6s ease-in; }
     .track-container__button:hover {
       cursor: pointer; }
 
@@ -318,43 +318,43 @@ body {
   background-image: url("../../resources/images/1.png");
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: .5; }
+  opacity: 0.5; }
 
 .btn-2 {
   background-image: url("../../resources/images/2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  opacity: .5; }
+  opacity: 0.5; }
 
 .btn-3 {
   background-image: url("../../resources/images/3.png");
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: .5; }
+  opacity: 0.5; }
 
 .btn-4 {
   background-image: url("../../resources/images/4.png");
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: .5; }
+  opacity: 0.5; }
 
 .btn-5 {
   background-image: url("../../resources/images/5.png");
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: .5; }
+  opacity: 0.5; }
 
 .btn-6 {
   background-image: url("../../resources/images/6.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: .5; }
+  opacity: 0.5; }
 
 .btn-7 {
   background-image: url("../../resources/images/7.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: .5; }
+  opacity: 0.5; }
 
 .button--right {
   fill: #fff;
@@ -381,29 +381,55 @@ body {
   .esrb__text {
     width: 86%; }
 
-.btn {
-  background-color: #e60012; }
-  .btn, .btn:link, .btn:visited {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    margin: 2rem 0;
-    height: 5rem;
-    border-radius: 1rem;
-    text-decoration: none;
-    width: 100%;
-    font-size: 1.4rem;
-    font-weight: 600;
-    border: none;
-    transition: transform .2s ease-in; }
-  .btn-icon {
-    fill: #fff;
-    margin-right: 1.3rem; }
-  .btn:hover {
+.btn, .btn:link, .btn:visited {
+  background-color: #e60012;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 1rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }
+
+.btn--animated {
+  transition: transform 0.3s ease-in-out; }
+  .btn--animated:hover {
     transform: scaleX(1.1);
     background-color: firebrick; }
+
+.btn--download {
+  width: 100%;
+  height: 5rem;
+  margin: 2rem 0; }
+
+.btn-icon {
+  fill: #fff;
+  margin-right: 1.3rem; }
+
+.rating {
+  width: 90%;
+  height: 20rem;
+  border: 1px solid red;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: row; }
+
+#ersb-rating {
+  width: 50%;
+  border: 1px solid red; }
+
+#everyone {
+  display: flex; }
+
+.play-modes {
+  display: flex;
+  flex-direction: column; }
+
+.modes {
+  display: flex; }
 
 #hero {
   background-color: #d6f0fa;
@@ -425,7 +451,7 @@ body {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  margin: .5rem auto; }
+  margin: 0.5rem auto; }
 
 .breadcrumb {
   display: flex;
@@ -450,7 +476,7 @@ body {
   border-left: 2px solid #e60012;
   width: auto;
   height: 1.5rem;
-  padding-left: .5rem;
+  padding-left: 0.5rem;
   font-size: 1.3rem;
   font-weight: 200; }
 
@@ -475,3 +501,54 @@ body {
   align-items: center; }
   .stardew--points__icon {
     fill: goldenrod; }
+
+.main {
+  width: 100rem;
+  height: 200vh;
+  margin: 10rem auto; }
+
+.stardew-intro {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0rem 4rem auto; }
+  .stardew-intro__image {
+    height: 25rem;
+    border-radius: 1rem; }
+
+.moving {
+  width: 50%; }
+
+.btn-explore {
+  height: 4rem;
+  width: 27rem;
+  margin-bottom: 2rem;
+  font-size: 1.4rem; }
+
+.sub-heading {
+  margin-bottom: 1rem; }
+
+.moving-text {
+  font-size: 1.2em;
+  word-spacing: 0.2em;
+  line-height: 1.5; }
+
+#read-more {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  margin: 1rem 0rem;
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: #e60012;
+  font-weight: 600; }
+
+.more--icon {
+  fill: #e60012;
+  width: 1.5rem;
+  margin-right: 0.5rem; }
+
+#note {
+  display: block;
+  margin-bottom: 1rem; }
