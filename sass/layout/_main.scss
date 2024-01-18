@@ -1,0 +1,59 @@
+.main {
+  width: $grid-width;
+  height: 200vh;
+  // border: 1px solid red;
+  margin: 10rem auto;
+}
+.stardew-intro {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  // not done
+  margin: 0rem 4rem auto;
+
+  
+  // border: 1px solid red;
+
+  &__image {
+    height: 25rem;
+    border-radius: 1rem;
+  }
+}
+.moving {
+  width: 50%;
+}
+.btn-explore {
+  height: 4rem;
+  width: 27rem;
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+}
+.sub-heading {
+  margin-bottom: 1rem;
+}
+.moving-text {
+  font-size: 1.2em;
+  word-spacing: 0.2em;
+  line-height: 1.5;
+}
+#read-more {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  // border: 1px solid red;
+  margin: 1rem 0rem;
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: $color-primary-red;
+  font-weight: 600;
+}
+.more--icon {
+  fill: $color-primary-red;
+  width: 1.5rem;
+  margin-right: 0.5rem;
+}
+#note {
+  display: block;
+  margin-bottom: 1rem;
+}
