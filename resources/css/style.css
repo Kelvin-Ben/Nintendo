@@ -528,6 +528,57 @@ body {
 .genre {
   width: 16rem; }
 
+#online {
+  width: 100rem;
+  height: 35rem;
+  display: flex; }
+
+.online {
+  width: 95%;
+  margin: 0 auto;
+  padding: 1rem 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+  .online__left {
+    width: 50%; }
+    .online__left--logo {
+      height: 4rem;
+      margin-bottom: 2rem; }
+    .online__left h3 {
+      font-size: 1.8rem;
+      line-height: 1.5;
+      margin-bottom: 1.2rem; }
+    .online__left p {
+      font-size: 1.3rem;
+      margin-bottom: 1.2rem; }
+      .online__left p span {
+        display: inline-block;
+        width: 20rem; }
+        .online__left p span a {
+          color: #e60012;
+          text-decoration: none;
+          border-bottom: 1px solid; }
+          .online__left p span a:first-child {
+            margin-right: 2rem; }
+          .online__left p span a:hover {
+            color: #b22222; }
+  .online__pro-controller-hand {
+    width: 47%; }
+
+.learn-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 12.5rem;
+  height: 4rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  border-radius: 1rem;
+  text-decoration: none;
+  background-color: #e60012;
+  color: #fff; }
+
 #hero {
   background-color: #d6f0fa;
   position: relative;
