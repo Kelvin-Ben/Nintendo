@@ -1,0 +1,60 @@
+.updates {
+  width: 100%;
+  height: $grid-height;
+}
+.status {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  margin: 0rem auto;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+    border-top: 1px solid rgba($color-dark, $alpha: 0.3);
+    &:last-child {
+      border-bottom: 1px solid rgba($color-dark, $alpha: 0.3);
+    }
+    p {
+      font-size: 1.3rem;
+      font-family: "Rubik";
+      font-style: normal;
+    }
+    &--link {
+      width: 30rem;
+      font-size: 1.2rem;
+      font-weight: 600;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      a {
+        text-decoration: none;
+        color: $color-primary-red;
+        border-bottom: 1px solid;
+        &:hover {
+          color: $color-primary-red-dark;
+        }
+      }
+    }
+  }
+}
+.list-item {
+  display: flex;
+  align-items: center;
+  width: 22rem;
+  margin-right: $margin-right;
+  &__icon {
+    margin-right: 1.5rem;
+  }
+  span {
+    font-size: 1.5rem;
+  }
+}
+.genre {
+  width: 16rem;
+}
