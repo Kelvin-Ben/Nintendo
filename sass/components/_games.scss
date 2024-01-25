@@ -150,3 +150,21 @@
 .card__heart {
   stroke: $color-primary-red;
 }
+// styling the warning text
+.warning {
+  // border: 1px solid purple;
+  height: 10rem;
+  margin-top: 2rem;
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    color: rgba($color-dark, $alpha: .9);
+
+    span {
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}

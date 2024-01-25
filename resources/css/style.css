@@ -703,6 +703,16 @@ body {
 .card__heart {
   stroke: #e60012; }
 
+.warning {
+  height: 10rem;
+  margin-top: 2rem; }
+  .warning__text {
+    display: flex;
+    flex-direction: column;
+    color: rgba(67, 66, 66, 0.9); }
+    .warning__text span:not(:last-child) {
+      margin-bottom: 1rem; }
+
 #hero {
   background-color: #d6f0fa;
   position: relative;
