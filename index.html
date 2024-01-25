@@ -11,6 +11,7 @@
     />
     <link rel="stylesheet" href="./resources/css/style.css" />
     <title>Nintendo</title>
+    <link rel="nintendo logo" href="./resources/images/2.jpg" />
   </head>
   <body>
     <header class="header">
@@ -784,8 +785,8 @@
       </article>
       <section class="more-games">
         <h2 class="secondary-heading">More like this</h2>
-        <div class="games-container">
-          <button class="games-container__button--left">
+        <ul class="games-container">
+          <button class="games-container__button--left prev-button">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -796,456 +797,491 @@
               ></path>
             </svg>
           </button>
-          <div class="card">
-            <img
-              src="./resources/images/ooblets.png"
-              alt="Ooblets"
-              class="card__image"
-            />
-            <div class="card__about">
-              <p class="card__title">
-                <strong>Ooblets</strong>
-                <span>9/1/22</span>
-              </p>
-              <h3 class="card__price">$29.99</h3>
-              <div class="card__switch">
-                <p class="stardew-text">nintendo switch</p>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  class="stardew-icon card__heart"
-                >
-                  <path
-                    d="M12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412l7.332 7.332c.17.299.498.492.875.492a.99.99 0 0 0 .792-.409l7.415-7.415c2.354-2.354 2.354-6.049-.002-8.416a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595zm6.791 1.61c1.563 1.571 1.564 4.025.002 5.588L12 18.586l-6.793-6.793c-1.562-1.563-1.561-4.017-.002-5.584.76-.756 1.754-1.172 2.799-1.172s2.035.416 2.789 1.17l.5.5a.999.999 0 0 0 1.414 0l.5-.5c1.512-1.509 4.074-1.505 5.584-.002z"
-                  ></path>
-                </svg>
+          <div class="card-container">
+            <li class="card">
+              <img
+                src="./resources/images/ooblets.png"
+                alt="Ooblets"
+                class="card__image"
+              />
+              <div class="card__about">
+                <p class="title">
+                  <strong>Ooblets</strong>
+                  <span>9/1/22</span>
+                </p>
+                <div class="description">
+                  <h3 class="card-price">$29.99</h3>
+                  <div class="card-switch">
+                    <p class="stardew-text">nintendo switch</p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      class="stardew-icon card__heart"
+                    >
+                      <path
+                        d="M12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412l7.332 7.332c.17.299.498.492.875.492a.99.99 0 0 0 .792-.409l7.415-7.415c2.354-2.354 2.354-6.049-.002-8.416a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595zm6.791 1.61c1.563 1.571 1.564 4.025.002 5.588L12 18.586l-6.793-6.793c-1.562-1.563-1.561-4.017-.002-5.584.76-.756 1.754-1.172 2.799-1.172s2.035.416 2.789 1.17l.5.5a.999.999 0 0 0 1.414 0l.5-.5c1.512-1.509 4.074-1.505 5.584-.002z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              src="./resources/images/potion-permet.avif"
-              alt="Ooblets"
-              class="card__image"
-            />
-            <div class="card__about">
-              <p class="card__title">
-                <strong>Portion Permit</strong>
-                <span>9/22/22</span>
-              </p>
-              <h3 class="card__price">$19.99</h3>
-              <div class="card__switch">
-                <p class="stardew-text">nintendo switch</p>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  class="stardew-icon card__heart"
-                >
-                  <path
-                    d="M12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412l7.332 7.332c.17.299.498.492.875.492a.99.99 0 0 0 .792-.409l7.415-7.415c2.354-2.354 2.354-6.049-.002-8.416a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595zm6.791 1.61c1.563 1.571 1.564 4.025.002 5.588L12 18.586l-6.793-6.793c-1.562-1.563-1.561-4.017-.002-5.584.76-.756 1.754-1.172 2.799-1.172s2.035.416 2.789 1.17l.5.5a.999.999 0 0 0 1.414 0l.5-.5c1.512-1.509 4.074-1.505 5.584-.002z"
-                  ></path>
-                </svg>
+            </li>
+            <li class="card">
+              <img
+                src="./resources/images/potion-permet.avif"
+                alt="Ooblets"
+                class="card__image"
+              />
+              <div class="card__about">
+                <p class="title">
+                  <strong>Portion Permit</strong>
+                  <span>9/22/22</span>
+                </p>
+                <div class="description">
+                  <h3 class="card-price">$19.99</h3>
+                  <div class="card-switch">
+                    <p class="stardew-text">nintendo switch</p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      class="stardew-icon card__heart"
+                    >
+                      <path
+                        d="M12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412l7.332 7.332c.17.299.498.492.875.492a.99.99 0 0 0 .792-.409l7.415-7.415c2.354-2.354 2.354-6.049-.002-8.416a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595zm6.791 1.61c1.563 1.571 1.564 4.025.002 5.588L12 18.586l-6.793-6.793c-1.562-1.563-1.561-4.017-.002-5.584.76-.756 1.754-1.172 2.799-1.172s2.035.416 2.789 1.17l.5.5a.999.999 0 0 0 1.414 0l.5-.5c1.512-1.509 4.074-1.505 5.584-.002z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              src="./resources/images/cozy-grove.webp"
-              alt="Ooblets"
-              class="card__image"
-            />
-            <div class="card__about">
-              <p class="card__title">
-                <strong>Cozy Grove</strong>
-                <span>4/8/21</span>
-              </p>
-              <h3 class="card__price">$14.99</h3>
-              <div class="card__switch">
-                <p class="stardew-text">nintendo switch</p>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  class="stardew-icon card__heart"
-                >
-                  <path
-                    d="M12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412l7.332 7.332c.17.299.498.492.875.492a.99.99 0 0 0 .792-.409l7.415-7.415c2.354-2.354 2.354-6.049-.002-8.416a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595zm6.791 1.61c1.563 1.571 1.564 4.025.002 5.588L12 18.586l-6.793-6.793c-1.562-1.563-1.561-4.017-.002-5.584.76-.756 1.754-1.172 2.799-1.172s2.035.416 2.789 1.17l.5.5a.999.999 0 0 0 1.414 0l.5-.5c1.512-1.509 4.074-1.505 5.584-.002z"
-                  ></path>
-                </svg>
+            </li>
+            <li class="card">
+              <img
+                src="./resources/images/cozy-grove.webp"
+                alt="Ooblets"
+                class="card__image"
+              />
+              <div class="card__about">
+                <p class="title">
+                  <strong>Cozy Grove</strong>
+                  <span>4/8/21</span>
+                </p>
+                <div class="description">
+                  <h3 class="card-price">$14.99</h3>
+                  <div class="card-switch">
+                    <p class="stardew-text">nintendo switch</p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      class="stardew-icon card__heart"
+                    >
+                      <path
+                        d="M12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412l7.332 7.332c.17.299.498.492.875.492a.99.99 0 0 0 .792-.409l7.415-7.415c2.354-2.354 2.354-6.049-.002-8.416a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595zm6.791 1.61c1.563 1.571 1.564 4.025.002 5.588L12 18.586l-6.793-6.793c-1.562-1.563-1.561-4.017-.002-5.584.76-.756 1.754-1.172 2.799-1.172s2.035.416 2.789 1.17l.5.5a.999.999 0 0 0 1.414 0l.5-.5c1.512-1.509 4.074-1.505 5.584-.002z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              src="./resources/images/animal-crossing.jpg"
-              alt="Ooblets"
-              class="card__image"
-            />
-            <div class="card__about">
-              <p class="card__title">
-                <strong>Animal crossing<sup>TM</sup>: New Horizon</strong>
-                <span>3/20/20</span>
-              </p>
-              <h3 class="card__price">$59.99</h3>
-              <div class="card__switch">
-                <p class="stardew-text">nintendo switch</p>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  class="stardew-icon card__heart"
-                >
-                  <path
-                    d="M12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412l7.332 7.332c.17.299.498.492.875.492a.99.99 0 0 0 .792-.409l7.415-7.415c2.354-2.354 2.354-6.049-.002-8.416a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595zm6.791 1.61c1.563 1.571 1.564 4.025.002 5.588L12 18.586l-6.793-6.793c-1.562-1.563-1.561-4.017-.002-5.584.76-.756 1.754-1.172 2.799-1.172s2.035.416 2.789 1.17l.5.5a.999.999 0 0 0 1.414 0l.5-.5c1.512-1.509 4.074-1.505 5.584-.002z"
-                  ></path>
-                </svg>
+            </li>
+            <li class="card">
+              <img
+                src="./resources/images/animal-crossing.png"
+                alt="Ooblets"
+                class="card__image"
+              />
+              <div class="card__about">
+                <p class="title">
+                  <strong>Animal crossing<sup>TM</sup>: New Horizon</strong>
+                  <span>3/20/20</span>
+                </p>
+                <div class="description">
+                  <h3 class="card-price">$59.99</h3>
+                  <div class="card-switch">
+                    <p class="stardew-text">nintendo switch</p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      class="stardew-icon card__heart"
+                    >
+                      <path
+                        d="M12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412l7.332 7.332c.17.299.498.492.875.492a.99.99 0 0 0 .792-.409l7.415-7.415c2.354-2.354 2.354-6.049-.002-8.416a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595zm6.791 1.61c1.563 1.571 1.564 4.025.002 5.588L12 18.586l-6.793-6.793c-1.562-1.563-1.561-4.017-.002-5.584.76-.756 1.754-1.172 2.799-1.172s2.035.416 2.789 1.17l.5.5a.999.999 0 0 0 1.414 0l.5-.5c1.512-1.509 4.074-1.505 5.584-.002z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              src="./resources/images/portia.webp"
-              alt="Ooblets"
-              class="card__image"
-            />
-            <div class="card__about">
-              <p class="card__title">
-                <strong>My Time at Portia</strong>
-                <span></span>
-              </p>
-              <h3 class="card__price">4/16/19</h3>
-              <div class="card__switch">
-                <p class="stardew-text">nintendo switch</p>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  class="stardew-icon card__heart"
-                >
-                  <path
-                    d="M12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412l7.332 7.332c.17.299.498.492.875.492a.99.99 0 0 0 .792-.409l7.415-7.415c2.354-2.354 2.354-6.049-.002-8.416a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595zm6.791 1.61c1.563 1.571 1.564 4.025.002 5.588L12 18.586l-6.793-6.793c-1.562-1.563-1.561-4.017-.002-5.584.76-.756 1.754-1.172 2.799-1.172s2.035.416 2.789 1.17l.5.5a.999.999 0 0 0 1.414 0l.5-.5c1.512-1.509 4.074-1.505 5.584-.002z"
-                  ></path>
-                </svg>
+            </li>
+            <li class="card">
+              <img
+                src="./resources/images/portia.webp"
+                alt="Ooblets"
+                class="card__image"
+              />
+              <div class="card__about">
+                <p class="title">
+                  <strong>My Time at Portia</strong>
+                  <span>4/16/19</span>
+                </p>
+                <div class="description">
+                  <h3 class="card-price">$29.99</h3>
+                  <div class="card-switch">
+                    <p class="stardew-text">nintendo switch</p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      class="stardew-icon card__heart"
+                    >
+                      <path
+                        d="M12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412l7.332 7.332c.17.299.498.492.875.492a.99.99 0 0 0 .792-.409l7.415-7.415c2.354-2.354 2.354-6.049-.002-8.416a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595zm6.791 1.61c1.563 1.571 1.564 4.025.002 5.588L12 18.586l-6.793-6.793c-1.562-1.563-1.561-4.017-.002-5.584.76-.756 1.754-1.172 2.799-1.172s2.035.416 2.789 1.17l.5.5a.999.999 0 0 0 1.414 0l.5-.5c1.512-1.509 4.074-1.505 5.584-.002z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              src="./resources/images/dreamlight-valley.jpg"
-              alt="Ooblets"
-              class="card__image"
-            />
-            <div class="card__about">
-              <p class="card__title">
-                <strong>Disney Dreamlight Valley</strong>
-                <span>9/6/22</span>
-              </p>
-              <h3 class="card__price">$39.99</h3>
-              <div class="card__switch">
-                <p class="stardew-text">nintendo switch</p>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  class="stardew-icon card__heart"
-                >
-                  <path
-                    d="M12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412l7.332 7.332c.17.299.498.492.875.492a.99.99 0 0 0 .792-.409l7.415-7.415c2.354-2.354 2.354-6.049-.002-8.416a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595zm6.791 1.61c1.563 1.571 1.564 4.025.002 5.588L12 18.586l-6.793-6.793c-1.562-1.563-1.561-4.017-.002-5.584.76-.756 1.754-1.172 2.799-1.172s2.035.416 2.789 1.17l.5.5a.999.999 0 0 0 1.414 0l.5-.5c1.512-1.509 4.074-1.505 5.584-.002z"
-                  ></path>
-                </svg>
+            </li>
+            <li class="card">
+              <img
+                src="./resources/images/dreamlight-valley.jpg"
+                alt="Ooblets"
+                class="card__image"
+              />
+              <div class="card__about">
+                <p class="title">
+                  <strong>Disney Dreamlight Valley</strong>
+                  <span>9/6/22</span>
+                </p>
+                <div class="description">
+                  <h3 class="card-price">$39.99</h3>
+                  <div class="card-switch">
+                    <p class="stardew-text">nintendo switch</p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      class="stardew-icon card__heart"
+                    >
+                      <path
+                        d="M12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412l7.332 7.332c.17.299.498.492.875.492a.99.99 0 0 0 .792-.409l7.415-7.415c2.354-2.354 2.354-6.049-.002-8.416a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595zm6.791 1.61c1.563 1.571 1.564 4.025.002 5.588L12 18.586l-6.793-6.793c-1.562-1.563-1.561-4.017-.002-5.584.76-.756 1.754-1.172 2.799-1.172s2.035.416 2.789 1.17l.5.5a.999.999 0 0 0 1.414 0l.5-.5c1.512-1.509 4.074-1.505 5.584-.002z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              src="./resources/images/fifa23.avif"
-              alt="Ooblets"
-              class="card__image"
-            />
-            <div class="card__about">
-              <p class="card__title">
-                <strong
-                  >EA SPORTS FIFA Nintendo Switch<sup>TM</sup> Legacy
-                  Edition</strong
-                >
-                <span>9/30/22</span>
-              </p>
-              <h3 class="card__price">$39.99</h3>
-              <div class="card__switch">
-                <p class="stardew-text">nintendo switch</p>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  class="stardew-icon card__heart"
-                >
-                  <path
-                    d="M12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412l7.332 7.332c.17.299.498.492.875.492a.99.99 0 0 0 .792-.409l7.415-7.415c2.354-2.354 2.354-6.049-.002-8.416a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595zm6.791 1.61c1.563 1.571 1.564 4.025.002 5.588L12 18.586l-6.793-6.793c-1.562-1.563-1.561-4.017-.002-5.584.76-.756 1.754-1.172 2.799-1.172s2.035.416 2.789 1.17l.5.5a.999.999 0 0 0 1.414 0l.5-.5c1.512-1.509 4.074-1.505 5.584-.002z"
-                  ></path>
-                </svg>
+            </li>
+            <li class="card">
+              <img
+                src="./resources/images/fifa23.png"
+                alt="fifa23"
+                class="card__image"
+              />
+              <div class="card__about">
+                <p class="title">
+                  <strong
+                    >EA SPORTS FIFA Nintendo Switch<sup>TM</sup> Legacy
+                    Edition</strong
+                  >
+                  <span>9/30/22</span>
+                </p>
+                <div class="description">
+                  <h3 class="card-price">$39.99</h3>
+                  <span class="card-switch">
+                    <p class="stardew-text">nintendo switch</p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      class="stardew-icon card__heart"
+                    >
+                      <path
+                        d="M12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412l7.332 7.332c.17.299.498.492.875.492a.99.99 0 0 0 .792-.409l7.415-7.415c2.354-2.354 2.354-6.049-.002-8.416a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595zm6.791 1.61c1.563 1.571 1.564 4.025.002 5.588L12 18.586l-6.793-6.793c-1.562-1.563-1.561-4.017-.002-5.584.76-.756 1.754-1.172 2.799-1.172s2.035.416 2.789 1.17l.5.5a.999.999 0 0 0 1.414 0l.5-.5c1.512-1.509 4.074-1.505 5.584-.002z"
+                      ></path>
+                    </svg>
+                  </span>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              src="./resources/images/story-of-seasons.jpg"
-              alt="Ooblets"
-              class="card__image"
-            />
-            <div class="card__about">
-              <p class="card__title">
-                <strong>STORY OF SEASONS: A Wonderful Life</strong>
-                <span>6/27/23</span>
-              </p>
-              <h3 class="card__price">$39.99</h3>
-              <div class="card__switch">
-                <p class="stardew-text">nintendo switch</p>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  class="stardew-icon card__heart"
-                >
-                  <path
-                    d="M12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412l7.332 7.332c.17.299.498.492.875.492a.99.99 0 0 0 .792-.409l7.415-7.415c2.354-2.354 2.354-6.049-.002-8.416a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595zm6.791 1.61c1.563 1.571 1.564 4.025.002 5.588L12 18.586l-6.793-6.793c-1.562-1.563-1.561-4.017-.002-5.584.76-.756 1.754-1.172 2.799-1.172s2.035.416 2.789 1.17l.5.5a.999.999 0 0 0 1.414 0l.5-.5c1.512-1.509 4.074-1.505 5.584-.002z"
-                  ></path>
-                </svg>
+            </li>
+            <li class="card">
+              <img
+                src="./resources/images/story-of-seasons.jpg"
+                alt="Ooblets"
+                class="card__image"
+              />
+              <div class="card__about">
+                <p class="title">
+                  <strong>STORY OF SEASONS: A Wonderful Life</strong>
+                  <span>6/27/23</span>
+                </p>
+                <div class="description">
+                  <h3 class="card-price">$39.99</h3>
+                  <div class="card-switch">
+                    <p class="stardew-text">nintendo switch</p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      class="stardew-icon card__heart"
+                    >
+                      <path
+                        d="M12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412l7.332 7.332c.17.299.498.492.875.492a.99.99 0 0 0 .792-.409l7.415-7.415c2.354-2.354 2.354-6.049-.002-8.416a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595zm6.791 1.61c1.563 1.571 1.564 4.025.002 5.588L12 18.586l-6.793-6.793c-1.562-1.563-1.561-4.017-.002-5.584.76-.756 1.754-1.172 2.799-1.172s2.035.416 2.789 1.17l.5.5a.999.999 0 0 0 1.414 0l.5-.5c1.512-1.509 4.074-1.505 5.584-.002z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              src="./resources/images/nba2k23.jpg"
-              alt="Ooblets"
-              class="card__image"
-            />
-            <div class="card__about">
-              <p class="card__title">
-                <strong>NBA 2K23</strong>
-                <span>9/9/22</span>
-              </p>
-              <h3 class="card__price">$59.99</h3>
-              <div class="card__switch">
-                <p class="stardew-text">nintendo switch</p>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  class="stardew-icon card__heart"
-                >
-                  <path
-                    d="M12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412l7.332 7.332c.17.299.498.492.875.492a.99.99 0 0 0 .792-.409l7.415-7.415c2.354-2.354 2.354-6.049-.002-8.416a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595zm6.791 1.61c1.563 1.571 1.564 4.025.002 5.588L12 18.586l-6.793-6.793c-1.562-1.563-1.561-4.017-.002-5.584.76-.756 1.754-1.172 2.799-1.172s2.035.416 2.789 1.17l.5.5a.999.999 0 0 0 1.414 0l.5-.5c1.512-1.509 4.074-1.505 5.584-.002z"
-                  ></path>
-                </svg>
+            </li>
+            <li class="card">
+              <img
+                src="./resources/images/nba2k23.jpg"
+                alt="Ooblets"
+                class="card__image"
+              />
+              <div class="card__about">
+                <p class="title">
+                  <strong>NBA 2K23</strong>
+                  <span>9/9/22</span>
+                </p>
+                <div class="description">
+                  <h3 class="card-price">$59.99</h3>
+                  <div class="card-switch">
+                    <p class="stardew-text">nintendo switch</p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      class="stardew-icon card__heart"
+                    >
+                      <path
+                        d="M12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412l7.332 7.332c.17.299.498.492.875.492a.99.99 0 0 0 .792-.409l7.415-7.415c2.354-2.354 2.354-6.049-.002-8.416a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595zm6.791 1.61c1.563 1.571 1.564 4.025.002 5.588L12 18.586l-6.793-6.793c-1.562-1.563-1.561-4.017-.002-5.584.76-.756 1.754-1.172 2.799-1.172s2.035.416 2.789 1.17l.5.5a.999.999 0 0 0 1.414 0l.5-.5c1.512-1.509 4.074-1.505 5.584-.002z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              src="./resources/images/turnip-boy.avif"
-              alt="Ooblets"
-              class="card__image"
-            />
-            <div class="card__about">
-              <p class="card__title">
-                <strong>Turnip Boy Commits Tax Evasion</strong>
-                <span>4/22/21</span>
-              </p>
-              <h3 class="card__price">$14.99</h3>
-              <div class="card__switch">
-                <p class="stardew-text">nintendo switch</p>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  class="stardew-icon card__heart"
-                >
-                  <path
-                    d="M12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412l7.332 7.332c.17.299.498.492.875.492a.99.99 0 0 0 .792-.409l7.415-7.415c2.354-2.354 2.354-6.049-.002-8.416a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595zm6.791 1.61c1.563 1.571 1.564 4.025.002 5.588L12 18.586l-6.793-6.793c-1.562-1.563-1.561-4.017-.002-5.584.76-.756 1.754-1.172 2.799-1.172s2.035.416 2.789 1.17l.5.5a.999.999 0 0 0 1.414 0l.5-.5c1.512-1.509 4.074-1.505 5.584-.002z"
-                  ></path>
-                </svg>
+            </li>
+            <li class="card">
+              <img
+                src="./resources/images/turnip-boy.png"
+                alt="Ooblets"
+                class="card__image"
+              />
+              <div class="card__about">
+                <p class="title">
+                  <strong>Turnip Boy Commits Tax Evasion</strong>
+                  <span>4/22/21</span>
+                </p>
+                <div class="description">
+                  <h3 class="card-price">$14.99</h3>
+                  <div class="card-switch">
+                    <p class="stardew-text">nintendo switch</p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      class="stardew-icon card__heart"
+                    >
+                      <path
+                        d="M12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412l7.332 7.332c.17.299.498.492.875.492a.99.99 0 0 0 .792-.409l7.415-7.415c2.354-2.354 2.354-6.049-.002-8.416a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595zm6.791 1.61c1.563 1.571 1.564 4.025.002 5.588L12 18.586l-6.793-6.793c-1.562-1.563-1.561-4.017-.002-5.584.76-.756 1.754-1.172 2.799-1.172s2.035.416 2.789 1.17l.5.5a.999.999 0 0 0 1.414 0l.5-.5c1.512-1.509 4.074-1.505 5.584-.002z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              src="./resources/images/story-of-season2.jpg"
-              alt="Ooblets"
-              class="card__image"
-            />
-            <div class="card__about">
-              <p class="card__title">
-                <strong>STORY OF SEASONS: Pioneers of Olive Town</strong>
-                <span></span>
-              </p>
-              <h3 class="card__price">$39.99</h3>
-              <div class="card__switch">
-                <p class="stardew-text">nintendo switch</p>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  class="stardew-icon card__heart"
-                >
-                  <path
-                    d="M12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412l7.332 7.332c.17.299.498.492.875.492a.99.99 0 0 0 .792-.409l7.415-7.415c2.354-2.354 2.354-6.049-.002-8.416a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595zm6.791 1.61c1.563 1.571 1.564 4.025.002 5.588L12 18.586l-6.793-6.793c-1.562-1.563-1.561-4.017-.002-5.584.76-.756 1.754-1.172 2.799-1.172s2.035.416 2.789 1.17l.5.5a.999.999 0 0 0 1.414 0l.5-.5c1.512-1.509 4.074-1.505 5.584-.002z"
-                  ></path>
-                </svg>
+            </li>
+            <li class="card">
+              <img
+                src="./resources/images/story-of-season2.jpg"
+                alt="Ooblets"
+                class="card__image"
+              />
+              <div class="card__about">
+                <p class="title">
+                  <strong>STORY OF SEASONS: Pioneers of Olive Town</strong>
+                  <span></span>
+                </p>
+                <div class="description">
+                  <h3 class="card-price">$39.99</h3>
+                  <div class="card-switch">
+                    <p class="stardew-text">nintendo switch</p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      class="stardew-icon card__heart"
+                    >
+                      <path
+                        d="M12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412l7.332 7.332c.17.299.498.492.875.492a.99.99 0 0 0 .792-.409l7.415-7.415c2.354-2.354 2.354-6.049-.002-8.416a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595zm6.791 1.61c1.563 1.571 1.564 4.025.002 5.588L12 18.586l-6.793-6.793c-1.562-1.563-1.561-4.017-.002-5.584.76-.756 1.754-1.172 2.799-1.172s2.035.416 2.789 1.17l.5.5a.999.999 0 0 0 1.414 0l.5-.5c1.512-1.509 4.074-1.505 5.584-.002z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              src="./resources/images/the-show-22.png"
-              alt="Ooblets"
-              class="card__image"
-            />
-            <div class="card__about">
-              <p class="card__title">
-                <strong>MLB&reg; The Show<sup>TM</sup> 22</strong>
-                <span>4/5/22</span>
-              </p>
-              <h3 class="card__price">$59.99</h3>
-              <div class="card__switch">
-                <p class="stardew-text">nintendo switch</p>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  class="stardew-icon card__heart"
-                >
-                  <path
-                    d="M12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412l7.332 7.332c.17.299.498.492.875.492a.99.99 0 0 0 .792-.409l7.415-7.415c2.354-2.354 2.354-6.049-.002-8.416a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595zm6.791 1.61c1.563 1.571 1.564 4.025.002 5.588L12 18.586l-6.793-6.793c-1.562-1.563-1.561-4.017-.002-5.584.76-.756 1.754-1.172 2.799-1.172s2.035.416 2.789 1.17l.5.5a.999.999 0 0 0 1.414 0l.5-.5c1.512-1.509 4.074-1.505 5.584-.002z"
-                  ></path>
-                </svg>
+            </li>
+            <li class="card">
+              <img
+                src="./resources/images/the-show-22.png"
+                alt="Ooblets"
+                class="card__image"
+              />
+              <div class="card__about">
+                <p class="title">
+                  <strong>MLB&reg; The Show<sup>TM</sup> 22</strong>
+                  <span>4/5/22</span>
+                </p>
+                <div class="description">
+                  <h3 class="card-price">$59.99</h3>
+                  <div class="card-switch">
+                    <p class="stardew-text">nintendo switch</p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      class="stardew-icon card__heart"
+                    >
+                      <path
+                        d="M12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412l7.332 7.332c.17.299.498.492.875.492a.99.99 0 0 0 .792-.409l7.415-7.415c2.354-2.354 2.354-6.049-.002-8.416a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595zm6.791 1.61c1.563 1.571 1.564 4.025.002 5.588L12 18.586l-6.793-6.793c-1.562-1.563-1.561-4.017-.002-5.584.76-.756 1.754-1.172 2.799-1.172s2.035.416 2.789 1.17l.5.5a.999.999 0 0 0 1.414 0l.5-.5c1.512-1.509 4.074-1.505 5.584-.002z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              src="./resources/images/calico.avif"
-              alt="Ooblets"
-              class="card__image"
-            />
-            <div class="card__about">
-              <p class="card__title">
-                <strong>Calico</strong>
-                <span>12/15/20</span>
-              </p>
-              <h3 class="card__price">$11.99</h3>
-              <div class="card__switch">
-                <p class="stardew-text">nintendo switch</p>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  class="stardew-icon card__heart"
-                >
-                  <path
-                    d="M12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412l7.332 7.332c.17.299.498.492.875.492a.99.99 0 0 0 .792-.409l7.415-7.415c2.354-2.354 2.354-6.049-.002-8.416a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595zm6.791 1.61c1.563 1.571 1.564 4.025.002 5.588L12 18.586l-6.793-6.793c-1.562-1.563-1.561-4.017-.002-5.584.76-.756 1.754-1.172 2.799-1.172s2.035.416 2.789 1.17l.5.5a.999.999 0 0 0 1.414 0l.5-.5c1.512-1.509 4.074-1.505 5.584-.002z"
-                  ></path>
-                </svg>
+            </li>
+            <li class="card">
+              <img
+                src="./resources/images/calico.avif"
+                alt="Ooblets"
+                class="card__image"
+              />
+              <div class="card__about">
+                <p class="title">
+                  <strong>Calico</strong>
+                  <span>12/15/20</span>
+                </p>
+                <div class="description">
+                  <h3 class="card-price">$11.99</h3>
+                  <div class="card-switch">
+                    <p class="stardew-text">nintendo switch</p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      class="stardew-icon card__heart"
+                    >
+                      <path
+                        d="M12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412l7.332 7.332c.17.299.498.492.875.492a.99.99 0 0 0 .792-.409l7.415-7.415c2.354-2.354 2.354-6.049-.002-8.416a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595zm6.791 1.61c1.563 1.571 1.564 4.025.002 5.588L12 18.586l-6.793-6.793c-1.562-1.563-1.561-4.017-.002-5.584.76-.756 1.754-1.172 2.799-1.172s2.035.416 2.789 1.17l.5.5a.999.999 0 0 0 1.414 0l.5-.5c1.512-1.509 4.074-1.505 5.584-.002z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              src="./resources/images/dragon-quest-builders.jpeg"
-              alt="Ooblets"
-              class="card__image"
-            />
-            <div class="card__about">
-              <p class="card__title">
-                <strong>DRAGON QUEST BUILDERS<sup>TM</sup> 2</strong>
-                <span>7/12/19</span>
-              </p>
-              <h3 class="card__price">$49.99</h3>
-              <div class="card__switch">
-                <p class="stardew-text">nintendo switch</p>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  class="stardew-icon card__heart"
-                >
-                  <path
-                    d="M12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412l7.332 7.332c.17.299.498.492.875.492a.99.99 0 0 0 .792-.409l7.415-7.415c2.354-2.354 2.354-6.049-.002-8.416a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595zm6.791 1.61c1.563 1.571 1.564 4.025.002 5.588L12 18.586l-6.793-6.793c-1.562-1.563-1.561-4.017-.002-5.584.76-.756 1.754-1.172 2.799-1.172s2.035.416 2.789 1.17l.5.5a.999.999 0 0 0 1.414 0l.5-.5c1.512-1.509 4.074-1.505 5.584-.002z"
-                  ></path>
-                </svg>
+            </li>
+            <li class="card">
+              <img
+                src="./resources/images/dragon-quest-builders.jpeg"
+                alt="Ooblets"
+                class="card__image"
+              />
+              <div class="card__about">
+                <p class="title">
+                  <strong>DRAGON QUEST BUILDERS<sup>TM</sup> 2</strong>
+                  <span>7/12/19</span>
+                </p>
+                <div class="description">
+                  <h3 class="card-price">$49.99</h3>
+                  <div class="card-switch">
+                    <p class="stardew-text">nintendo switch</p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      class="stardew-icon card__heart"
+                    >
+                      <path
+                        d="M12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412l7.332 7.332c.17.299.498.492.875.492a.99.99 0 0 0 .792-.409l7.415-7.415c2.354-2.354 2.354-6.049-.002-8.416a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595zm6.791 1.61c1.563 1.571 1.564 4.025.002 5.588L12 18.586l-6.793-6.793c-1.562-1.563-1.561-4.017-.002-5.584.76-.756 1.754-1.172 2.799-1.172s2.035.416 2.789 1.17l.5.5a.999.999 0 0 0 1.414 0l.5-.5c1.512-1.509 4.074-1.505 5.584-.002z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              src="./resources/images/yonder.jpg"
-              alt="Ooblets"
-              class="card__image"
-            />
-            <div class="card__about">
-              <p class="card__title">
-                <strong>Yonder: The Cloud Catcher chronicles</strong>
-                <span>5/17/18</span>
-              </p>
-              <h3 class="card__price">29.99</h3>
-              <div class="card__switch">
-                <p class="stardew-text">nintendo switch</p>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  class="stardew-icon card__heart"
-                >
-                  <path
-                    d="M12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412l7.332 7.332c.17.299.498.492.875.492a.99.99 0 0 0 .792-.409l7.415-7.415c2.354-2.354 2.354-6.049-.002-8.416a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595zm6.791 1.61c1.563 1.571 1.564 4.025.002 5.588L12 18.586l-6.793-6.793c-1.562-1.563-1.561-4.017-.002-5.584.76-.756 1.754-1.172 2.799-1.172s2.035.416 2.789 1.17l.5.5a.999.999 0 0 0 1.414 0l.5-.5c1.512-1.509 4.074-1.505 5.584-.002z"
-                  ></path>
-                </svg>
+            </li>
+            <li class="card">
+              <img
+                src="./resources/images/yonder.jpg"
+                alt="Ooblets"
+                class="card__image"
+              />
+              <div class="card__about">
+                <p class="title">
+                  <strong>Yonder: The Cloud Catcher chronicles</strong>
+                  <span>5/17/18</span>
+                </p>
+                <div class="description">
+                  <h3 class="card-price">29.99</h3>
+                  <div class="card-switch">
+                    <p class="stardew-text">nintendo switch</p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      class="stardew-icon card__heart"
+                    >
+                      <path
+                        d="M12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412l7.332 7.332c.17.299.498.492.875.492a.99.99 0 0 0 .792-.409l7.415-7.415c2.354-2.354 2.354-6.049-.002-8.416a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595zm6.791 1.61c1.563 1.571 1.564 4.025.002 5.588L12 18.586l-6.793-6.793c-1.562-1.563-1.561-4.017-.002-5.584.76-.756 1.754-1.172 2.799-1.172s2.035.416 2.789 1.17l.5.5a.999.999 0 0 0 1.414 0l.5-.5c1.512-1.509 4.074-1.505 5.584-.002z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              src="./resources/images/below-zero.webp"
-              alt="Ooblets"
-              class="card__image"
-            />
-            <div class="card__about">
-              <p class="card__title">
-                <strong>Subnautica: Below Zero</strong>
-                <span>5/14/21</span>
-              </p>
-              <h3 class="card__price">$20.99</h3>
-              <div class="card__switch">
-                <p class="stardew-text">nintendo switch</p>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  class="stardew-icon card__heart"
-                >
-                  <path
-                    d="M12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412l7.332 7.332c.17.299.498.492.875.492a.99.99 0 0 0 .792-.409l7.415-7.415c2.354-2.354 2.354-6.049-.002-8.416a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595zm6.791 1.61c1.563 1.571 1.564 4.025.002 5.588L12 18.586l-6.793-6.793c-1.562-1.563-1.561-4.017-.002-5.584.76-.756 1.754-1.172 2.799-1.172s2.035.416 2.789 1.17l.5.5a.999.999 0 0 0 1.414 0l.5-.5c1.512-1.509 4.074-1.505 5.584-.002z"
-                  ></path>
-                </svg>
+            </li>
+            <li class="card">
+              <img
+                src="./resources/images/below-zero.webp"
+                alt="Ooblets"
+                class="card__image"
+              />
+              <div class="card__about">
+                <p class="title">
+                  <strong>Subnautica: Below Zero</strong>
+                  <span>5/14/21</span>
+                </p>
+                <div class="description">
+                  <h3 class="card-price">$20.99</h3>
+                  <div class="card-switch">
+                    <p class="stardew-text">nintendo switch</p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      class="stardew-icon card__heart"
+                    >
+                      <path
+                        d="M12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412l7.332 7.332c.17.299.498.492.875.492a.99.99 0 0 0 .792-.409l7.415-7.415c2.354-2.354 2.354-6.049-.002-8.416a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595zm6.791 1.61c1.563 1.571 1.564 4.025.002 5.588L12 18.586l-6.793-6.793c-1.562-1.563-1.561-4.017-.002-5.584.76-.756 1.754-1.172 2.799-1.172s2.035.416 2.789 1.17l.5.5a.999.999 0 0 0 1.414 0l.5-.5c1.512-1.509 4.074-1.505 5.584-.002z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
               </div>
-            </div>
+            </li>
+            -->
           </div>
           <button class="games-container__button--right">
             <svg
@@ -1258,7 +1294,7 @@
               ></path>
             </svg>
           </button>
-        </div>
+        </ul>
       </section>
     </main>
     <script src="./js/carousel.js"></script>
