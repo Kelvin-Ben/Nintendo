@@ -55,12 +55,12 @@
   }
 }
 .card-container {
-  width: 95%;
+  width: 90%;
   height: 95%;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(20, 1fr);
-  gap: 5rem;
+  gap: 3rem;
   align-content: center;
   overflow: hidden;
   // border: 1px solid salmon;
