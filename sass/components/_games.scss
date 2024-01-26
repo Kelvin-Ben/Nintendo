@@ -159,7 +159,7 @@
   &__text {
     display: flex;
     flex-direction: column;
-    color: rgba($color-dark, $alpha: .9);
+    color: rgba($color-dark, $alpha: 0.9);
 
     span {
       &:not(:last-child) {
