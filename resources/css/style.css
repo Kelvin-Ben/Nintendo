@@ -713,6 +713,79 @@ body {
     .warning__text span:not(:last-child) {
       margin-bottom: 1rem; }
 
+.footer {
+  width: 100%;
+  height: 57vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .footer__top {
+    height: 9.5rem;
+    background-color: #e60012;
+    display: flex; }
+    .footer__top div {
+      width: 65%;
+      height: 70%;
+      margin: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      .footer__top div img {
+        height: 100%; }
+  .footer__bottom {
+    height: 6.6rem;
+    background-color: rgba(0, 0, 0, 0.86); }
+    .footer__bottom div {
+      width: 65%;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      margin: auto; }
+  .footer__text {
+    color: #fff; }
+  .footer__contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 60rem;
+    list-style-type: none; }
+
+.social-media {
+  height: 100%;
+  width: 25%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  border: 1px solid purple; }
+
+.media-icon {
+  width: 3rem;
+  height: 3rem;
+  fill: #fff; }
+
+.contact-link {
+  color: #fff;
+  text-decoration: none; }
+  .contact-link:hover strong:not(:last-child) {
+    border-bottom: 1px solid #e60012; }
+  .contact-link:last-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+    .contact-link:last-child strong:hover {
+      border-bottom: 1px solid #fff; }
+  .contact-link img {
+    width: 2.2rem;
+    height: 1.5rem;
+    border-radius: .4rem;
+    border: 1px solid #efefef;
+    margin: 0rem .5rem; }
+
 #hero {
   background-color: #d6f0fa;
   position: relative;
@@ -787,7 +860,7 @@ body {
 .main {
   width: 100rem;
   height: 200vh;
-  margin: 10rem auto; }
+  margin: 10rem auto 5rem auto; }
 
 .stardew-intro {
   display: flex;
