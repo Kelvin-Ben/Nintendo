@@ -1,10 +1,11 @@
 .footer {
   width: 100%;
-  height: 57vh;
-  // border: 1px solid purple;
-  display: flex;
+  height: auto;
+  // border: 5px solid purple;
+  display: block;
   flex-direction: column;
   justify-content: space-between;
+  // position: relative;
 
   &__top {
     height: 9.5rem;
@@ -20,15 +21,23 @@
       flex-direction: row;
       justify-content: space-between;
 
-
       img {
         height: 100%;
       }
     }
   }
+  &__middle {
+    height: 38rem;
+
+    width: 65%;
+    margin: 0 auto;
+    display: flex;
+    border: 1px solid purple;
+  }
   &__bottom {
+    width: 100%;
     height: 6.6rem;
-    background-color: rgba($color-black, $alpha: .86);
+    background-color: rgba($color-black, $alpha: 0.86);
 
     div {
       width: 65%;
@@ -44,7 +53,6 @@
   }
   &__text {
     color: $color-white;
-
   }
 
   &__contact {
@@ -66,7 +74,7 @@
   align-items: center;
   justify-content: space-around;
   list-style: none;
-  border: 1px solid purple;
+  // border: 1px solid purple;
 }
 .media-icon {
   width: 3rem;
@@ -81,9 +89,7 @@
     strong {
       &:not(:last-child) {
         border-bottom: 1px solid $color-primary-red;
-
       }
-
     }
   }
 
@@ -95,8 +101,6 @@
     strong {
       &:hover {
         border-bottom: 1px solid $color-white;
-
-        
       }
     }
   }
@@ -104,8 +108,101 @@
   img {
     width: 2.2rem;
     height: 1.5rem;
-    border-radius: .4rem;
+    border-radius: 0.4rem;
     border: 1px solid $color-secondary-white;
-    margin: 0rem .5rem;
+    margin: 0rem 0.5rem;
   }
 }
+// style middle part
+.services {
+  height: 25rem;
+  width: 95%;
+  // border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+
+  &__about,
+  &__shop,
+  &__store,
+  &__support,
+  &__parents,
+  &__privacy,
+  &__community {
+    width: 18%;
+    // height: auto;
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    list-style: none;
+    font-size: 1.3rem;
+    font-weight: 700;
+    border-left: 1px solid rgba($color-dark, $alpha: 0.2);
+
+    // border: 1px solid purple;
+    // border-left: 2px solid $color-dark;
+
+    h3 {
+      margin-bottom: 1.4rem;
+
+      &:hover {
+        cursor: pointer;
+        text-decoration: underline $color-primary-red-dark;
+        text-underline-offset: 2.5px;
+        text-decoration-thickness: 1px;
+      }
+    }
+  }
+  &__about {
+    border-left: none;
+  }
+
+  &__related {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    font-size: 1rem;
+
+    &--parents,
+    &--privacy {
+      border-left: 1px solid rgba($color-dark, $alpha: 0.2);
+      height: 40%;
+      // border: 1px solid red;
+      padding: 1rem 2rem;
+      font-size: 1.4rem;
+      list-style: none;
+      font-size: 1.3rem;
+      font-weight: 700;
+
+      h3 {
+        margin-bottom: 1.4rem;
+
+        &:hover {
+          cursor: pointer;
+          text-decoration: underline $color-primary-red-dark;
+          text-underline-offset: 4px;
+          text-decoration-thickness: 1px;
+        }
+      }
+    }
+  }
+}
+.list {
+  margin-bottom: 0.7rem;
+}
+.link {
+  color: $color-primary-red;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+}
+.link:hover {
+  text-decoration: underline $color-primary-red-dark;
+  text-underline-offset: 2.5px;
+  text-decoration-thickness: 1px;
+}
+// where to begin
+/*
+- 
+*/
