@@ -19,7 +19,7 @@
   transition: transform 0.3s ease-in-out;
 
   &:hover {
-    transform: scaleX(1.1);
+    transform: scaleX(1.1) scaleY(1.1);
     background-color: rgba($color-primary-red-dark, 1);
   }
 }
