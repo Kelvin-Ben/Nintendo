@@ -31,21 +31,19 @@
   left: 15rem;
 
   &:hover {
-    &::after {
-      cursor: pointer;
-      background-color: $color-primary-red;
-    }
-    color: $color-primary-red;
-    transition: linear 0.3s;
+    cursor: pointer;
   }
-  &::after {
-    content: " ";
+  &__line {
+    position: absolute;
     width: 95%;
     height: 1px;
     background-color: $color-dark;
-    position: absolute;
     top: 4.2rem;
     left: 0.6rem;
+
+    &:hover {
+      background-color: $color-primary-red;
+    }
   }
 }
 .search {
@@ -55,15 +53,11 @@
   justify-content: space-between;
   height: 5rem;
   width: 80%;
+  cursor: pointer;
 
   &__icon {
     height: 2.4rem;
     width: 2.5rem;
-
-    &__hover {
-      fill: $color-primary-red;
-      transition: linear 0.3s;
-    }
   }
 
   &__input {
@@ -73,11 +67,12 @@
     height: 70%;
     border: none;
     outline: none;
-    &:hover {
-      cursor: pointer;
-      color: $color-primary-red;
-      transition: linear 0.3s;
-    }
+    color: rgba($color-dark, $alpha: 0.5);
+    // border: 1px solid red;
+  }
+  &:hover > * {
+    color: $color-primary-red;
+    fill: $color-primary-red;
   }
 }
 .category {
@@ -89,10 +84,10 @@
   height: 5rem;
   z-index: 10;
 
-  &:hover {
+  &:hover > * {
     color: $color-primary-red;
-    transition: all 0.5s ease-in;
-    cursor: pointer;
+    fill: $color-primary-red;
+    // transition: all 0.5s ease-in;
   }
 
   &__icon {
