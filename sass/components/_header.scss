@@ -140,11 +140,6 @@
     width: 2rem;
     height: 2rem;
     fill: $color-dark;
-
-    &:hover {
-      fill: $color-primary-red;
-      transition: all 0.5s ease-in;
-    }
   }
 }
 
@@ -212,11 +207,6 @@
     fill: $color-dark;
     height: 2rem;
     width: 2rem;
-
-    &:hover {
-      fill: $color-primary-red;
-      transition: all 0.4s;
-    }
   }
 }
 
