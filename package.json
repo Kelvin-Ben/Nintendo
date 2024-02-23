@@ -4,13 +4,27 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile-sass": "node-sass sass/main.scss resources/css/style.css -w",
-    "start": "lite-server"
+    "watch-sass": "node-sass sass/main.scss resources/css/style.css -w",
+    "devserver": "lite-server",
+    "start": "npm-run-all --parallel devserver watch-sass",
+    "compile-css": "node-sass sass/main.scss resources/css/style.comp.css",
+    "concat-css": "concat -o resources/css/style.concat.css resources/css/style.comp.css",
+    "prefix-css": "postcss --use autoprefixer -b '10 versions' resources/css/style.concat.css -o resources/css/style.prefix.css",
+    "compress-css": "node-sass resources/css/style.prefix.css resources/css/style.css --output-style compressed",
+    "build-css": "npm-run-all compile-css concat-css prefix-css compress-css"
   },
   "author": "Kelvin-Ben",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^10.4.17",
+    "concat": "^1.0.3",
+    "node-sass": "^9.0.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^11.0.0"
+  },
+  "dependencies": {
+    "lite": "^4.0.5",
     "lite-server": "^2.6.1",
-    "node-sass": "^9.0.0"
+    "server": "^1.0.38"
   }
 }
