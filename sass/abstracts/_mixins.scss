@@ -5,3 +5,10 @@
     clear: both;
   }
 }
+@mixin absCenter {
+  position: absolute;
+  top: 9rem;
+  left: 0;
+  box-shadow: 0 2rem 4rem rgba($color-black, $alpha: 0.2);
+  border-radius: 2px;
+}
