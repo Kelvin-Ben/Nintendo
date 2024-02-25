@@ -21,6 +21,110 @@ html {
 body {
   box-sizing: border-box; }
 
+@keyframes bounce {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.05); }
+  70% {
+    transform: scale(1.08); } }
+
+.popup {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(67, 66, 66, 0.7);
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  backdrop-filter: blur(10px);
+  background-color: rgba(67, 66, 66, 0.3); }
+  .popup__content {
+    position: absolute;
+    top: 9rem;
+    left: 0;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    background-color: #fff;
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .popup__content--close {
+      width: 2.6rem;
+      z-index: 1;
+      position: absolute;
+      top: 3.7rem;
+      right: 4rem;
+      background-color: #fff;
+      border-radius: 50%;
+      fill: #e60012;
+      cursor: pointer; }
+      .popup__content--close:hover {
+        background-color: rgba(255, 255, 255, 0.8); }
+    .popup__content--top {
+      width: 100%;
+      height: 10rem;
+      display: flex;
+      justify-content: center;
+      background-color: #e60012;
+      position: relative; }
+      .popup__content--top::before {
+        content: "";
+        position: absolute;
+        top: -10px;
+        left: 0;
+        clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 50%, 100% 0); }
+      .popup__content--top__link {
+        text-decoration: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center; }
+        .popup__content--top__link--text {
+          font-size: 1.8rem;
+          font-weight: 700;
+          color: #fff; }
+      .popup__content--top__icon {
+        width: 2.5rem;
+        fill: #fff; }
+    .popup__content--store {
+      width: 60%;
+      margin-bottom: 1.5rem; }
+    .popup__content--items {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 100%;
+      height: auto;
+      padding: 2rem; }
+
+.items {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; }
+  .items__heading {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.5rem;
+    cursor: pointer; }
+    .items__heading--text {
+      margin-left: 0.6rem; }
+    .items__heading--icon {
+      fill: #e60012;
+      width: 2.2rem; }
+    .items__heading:hover {
+      color: #e60012; }
+  .items__link {
+    margin: 0.5rem 0;
+    text-decoration: none;
+    color: #434242;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 1.5; }
+    .items__link:hover {
+      color: #e60012; }
+
 .header {
   width: 100%;
   height: 8rem;
@@ -140,9 +244,6 @@ body {
     width: 2rem;
     height: 2rem;
     fill: #434242; }
-    .navigation__icon:hover {
-      fill: #e60012;
-      transition: all 0.5s ease-in; }
 
 /* styling middle nav-bar*/
 .middle {
@@ -194,9 +295,6 @@ body {
     fill: #434242;
     height: 2rem;
     width: 2rem; }
-    .nav__icon:hover {
-      fill: #e60012;
-      transition: all 0.4s; }
 
 .lower {
   width: 48.6%;
@@ -315,9 +413,11 @@ body {
     height: 5rem;
     width: 5rem;
     z-index: 10;
-    transition: opacity 0.6s ease-in; }
-    .track-container__button:hover {
-      cursor: pointer; }
+    cursor: pointer; }
+    .track-container__button--icon {
+      transition: all 0.1s linear; }
+      .track-container__button--icon:hover {
+        transform: scale(1.4); }
 
 .is-hidden {
   display: none; }
@@ -402,11 +502,9 @@ body {
   align-items: center;
   justify-content: center; }
 
-.btn--animated {
-  transition: transform 0.3s ease-in-out; }
-  .btn--animated:hover {
-    transform: scaleX(1.1) scaleY(1.1);
-    background-color: firebrick; }
+.btn--animated:hover {
+  animation: bounce 500ms ease;
+  animation-fill-mode: backwards; }
 
 .btn--download {
   width: 100%;
@@ -416,6 +514,28 @@ body {
 .btn-icon {
   fill: #fff;
   margin-right: 1.3rem; }
+
+.button-shop {
+  display: inline-block;
+  width: 12rem;
+  height: 5rem;
+  border: 1px solid #e60012;
+  background-color: none; }
+
+.button-shop {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: #e60012;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.tag {
+  transform: rotate(90deg); }
+
+#Shop {
+  background-color: none; }
 
 .rating {
   width: 90%;
