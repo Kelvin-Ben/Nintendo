@@ -16,11 +16,9 @@
   }
 }
 .btn--animated {
-  transition: transform 0.3s ease-in-out;
-
   &:hover {
-    transform: scaleX(1.1) scaleY(1.1);
-    background-color: rgba($color-primary-red-dark, 1);
+    animation: bounce 500ms ease;
+    animation-fill-mode: backwards;
   }
 }
 
@@ -32,4 +30,28 @@
 .btn-icon {
   fill: $color-white;
   margin-right: 1.3rem;
+}
+// POPUP BUTTON
+.button-shop {
+  display: inline-block;
+  width: 12rem;
+  height: 5rem;
+  border: 1px solid $color-primary-red;
+  background-color: none;
+  // next time start here !!! NOT DONE YET
+}
+.button-shop {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: $color-primary-red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tag {
+  transform: rotate(90deg);
+}
+#Shop {
+  background-color: none;
 }
