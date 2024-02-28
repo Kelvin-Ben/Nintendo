@@ -37,9 +37,10 @@
     width: 100%;
     height: 6.6rem;
     background-color: rgba($color-black, $alpha: 0.86);
+    font-size: 1.24rem;
 
     div {
-      width: 65%;
+      width: 140rem;
       height: 100%;
       display: flex;
       flex-direction: row;
@@ -51,14 +52,44 @@
   &__text {
     color: $color-white;
   }
+}
+.contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 60rem;
+  list-style-type: none;
 
-  &__contact {
+  &__list {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    width: 60rem;
-    list-style-type: none;
+  }
+
+  &__link {
+    color: $color-white;
+    text-decoration: none;
+    position: relative;
+    width: 100%;
+
+    &:hover::after {
+      content: "";
+      position: absolute;
+      top: 1.7rem;
+      left: 0;
+      width: inherit;
+      background-color: $color-primary-red;
+      height: 2px;
+    }
+  }
+
+  img {
+    width: 2.2rem;
+    height: 1.5rem;
+    border-radius: 0.4rem;
+    border: 1px solid $color-secondary-white;
+    margin: 0rem 0.5rem;
   }
 }
 // styling social-media icons
@@ -77,42 +108,10 @@
   fill: $color-white;
 }
 // end of social-media icons
-.contact-link {
-  color: $color-white;
-  text-decoration: none;
-  &:hover {
-    strong {
-      &:not(:last-child) {
-        border-bottom: 1px solid $color-primary-red;
-      }
-    }
-  }
-
-  &:last-child {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-
-    strong {
-      &:hover {
-        border-bottom: 1px solid $color-white;
-      }
-    }
-  }
-
-  img {
-    width: 2.2rem;
-    height: 1.5rem;
-    border-radius: 0.4rem;
-    border: 1px solid $color-secondary-white;
-    margin: 0rem 0.5rem;
-  }
-}
 // style middle part
 .services {
   height: 25rem;
   width: 95%;
-  // border: 1px solid red;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -126,16 +125,12 @@
   &__privacy,
   &__community {
     width: 18%;
-    // height: auto;
     padding: 1rem 2rem;
     font-size: 1.4rem;
     list-style: none;
     font-size: 1.3rem;
     font-weight: 700;
     border-left: 1px solid rgba($color-dark, $alpha: 0.2);
-
-    // border: 1px solid purple;
-    // border-left: 2px solid $color-dark;
 
     h3 {
       margin-bottom: 1.4rem;
@@ -163,7 +158,6 @@
     &--privacy {
       border-left: 1px solid rgba($color-dark, $alpha: 0.2);
       height: 40%;
-      // border: 1px solid red;
       padding: 1rem 2rem;
       font-size: 1.4rem;
       list-style: none;
@@ -198,10 +192,9 @@
   text-decoration-thickness: 1px;
 }
 .privacy-certified {
-  width: 95%;
+  width: 131.5rem;
   height: 8rem;
   margin: 2rem auto;
-  // border: 1px solid red;
   display: flex;
   flex-direction: row;
   justify-content: end;
