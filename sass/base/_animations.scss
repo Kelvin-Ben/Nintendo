@@ -9,3 +9,26 @@
     transform: scale(1.08);
   }
 }
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-3rem);
+    opacity: 0;
+    height: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+    height: 40rem;
+  }
+}
+@keyframes slideOut {
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  0% {
+    transform: translateY(-40rem);
+    opacity: 0;
+  }
+}
