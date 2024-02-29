@@ -57,16 +57,18 @@
   text-transform: capitalize;
   border-left: 2px solid $color-primary-red;
   width: auto;
-  height: 1.5rem;
-  padding-left: 0.5rem;
+  height: 2rem;
   font-size: 1.3rem;
-  // margin-bottom: 2rem;
-  font-weight: 200;
+  padding-left: .5rem;
+  font-weight: 400;
+  // border: 1px solid black;
+  display: flex;
 }
 .secondary-heading {
   font-size: 2.6rem;
   text-transform: capitalize;
   margin: 2rem 0rem;
+  font-weight: 800;
 }
 .price {
   display: flex;
