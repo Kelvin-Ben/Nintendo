@@ -10,25 +10,24 @@
   }
 }
 
-@keyframes slideIn {
+@keyframes slide-in-top {
   0% {
-    transform: translateY(-3rem);
+    transform: translateY(-2.5rem);
     opacity: 0;
-    height: 0;
   }
   100% {
     transform: translateY(0);
     opacity: 1;
-    height: 40rem;
   }
 }
-@keyframes slideOut {
-  100% {
+
+@keyframes slide-out-top {
+  0% {
     transform: translateY(0);
     opacity: 1;
   }
   0% {
-    transform: translateY(-40rem);
+    transform: translateY(40rem);
     opacity: 0;
   }
 }
