@@ -7,41 +7,44 @@
   justify-content: space-between;
 
   &__top {
-    height: 9.5rem;
+    height: 11rem;
     background-color: $color-primary-red;
     display: flex;
+    width: 100%;
 
     div {
-      width: 65%;
-      height: 70%;
+      width: 80%;
+      height: 100%;
       margin: auto;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
 
       img {
-        height: 100%;
+        margin: auto 0;
+        height: 70%;
       }
     }
   }
   &__middle {
-    height: 38rem;
-
-    width: 65%;
+    height: auto;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+
   }
   &__bottom {
     width: 100%;
-    height: 6.6rem;
+    height: 10rem;
     background-color: rgba($color-black, $alpha: 0.86);
     font-size: 1.24rem;
 
     div {
-      width: 140rem;
-      height: 100%;
+      width: 80%;
+      height: inherit;
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -73,14 +76,9 @@
     position: relative;
     width: 100%;
 
-    &:hover::after {
-      content: "";
-      position: absolute;
-      top: 1.7rem;
-      left: 0;
-      width: inherit;
-      background-color: $color-primary-red;
-      height: 2px;
+    &:hover {
+      text-decoration: underline 2px solid $color-primary-red;
+      text-underline-offset: 3.5px;
     }
   }
 
@@ -110,21 +108,22 @@
 // end of social-media icons
 // style middle part
 .services {
-  height: 25rem;
-  width: 95%;
-  display: flex;
+  width: 80%;
+  display: table;
   flex-direction: row;
   justify-content: space-between;
   margin: 0 auto;
+  padding: 1rem;
 
   &__about,
   &__shop,
   &__store,
   &__support,
-  &__parents,
-  &__privacy,
+  &__combined,
   &__community {
-    width: 18%;
+    display: table-cell;
+    width: 20rem;
+    height: auto;
     padding: 1rem 2rem;
     font-size: 1.4rem;
     list-style: none;
@@ -138,11 +137,15 @@
       &:hover {
         cursor: pointer;
         text-decoration: underline $color-primary-red-dark;
-        text-underline-offset: 2.5px;
-        text-decoration-thickness: 1px;
+        text-underline-offset: 4px;
+        text-decoration-thickness: 2px;
       }
     }
   }
+  &__combined {
+    border-left: none;
+  }
+
   &__about {
     border-left: none;
   }
@@ -150,19 +153,18 @@
   &__related {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
     font-size: 1rem;
 
     &--parents,
     &--privacy {
       border-left: 1px solid rgba($color-dark, $alpha: 0.2);
-      height: 40%;
       padding: 1rem 2rem;
       font-size: 1.4rem;
       list-style: none;
       font-size: 1.3rem;
       font-weight: 700;
+      display: table;
+      width: 100%;
 
       h3 {
         margin-bottom: 1.4rem;
@@ -171,9 +173,12 @@
           cursor: pointer;
           text-decoration: underline $color-primary-red-dark;
           text-underline-offset: 4px;
-          text-decoration-thickness: 1px;
+          text-decoration-thickness: 2px;
         }
       }
+    }
+    &--privacy {
+      margin-top: 1rem;
     }
   }
 }
@@ -185,14 +190,16 @@
   text-decoration: none;
   position: relative;
   display: inline-block;
+  font-weight: 900;
 }
 .link:hover {
   text-decoration: underline $color-primary-red-dark;
-  text-underline-offset: 2.5px;
-  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 2px;
+  color: $color-primary-red-dark;
 }
 .privacy-certified {
-  width: 131.5rem;
+  width: 80%;
   height: 8rem;
   margin: 2rem auto;
   display: flex;
