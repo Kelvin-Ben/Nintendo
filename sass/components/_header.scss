@@ -146,10 +146,9 @@
 /* styling middle nav-bar*/
 
 .middle {
-  width: 48.6%;
+  width: 100%;
   height: 4rem;
   border-bottom: 1px solid rgba($color-dark, 0.3);
-  margin: 0 auto;
 }
 
 .nav {
@@ -157,8 +156,9 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+  width: 80rem;
   height: 4rem;
+  margin: 0 auto;
 
   &__list {
     position: relative;
@@ -212,7 +212,7 @@
 
 // styling the lower part
 .lower {
-  width: 48.6%;
+  width: 80rem;
   height: 5rem;
   display: flex;
   align-items: center;
