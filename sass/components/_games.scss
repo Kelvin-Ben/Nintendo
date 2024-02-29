@@ -152,14 +152,16 @@
 }
 // styling the warning text
 .warning {
-  // border: 1px solid purple;
-  height: 10rem;
-  margin-top: 2rem;
+  width: 100%;
+  margin: 2rem auto;
 
   &__text {
+    width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     color: rgba($color-dark, $alpha: 0.9);
+    font-size: 1.2rem;
 
     span {
       &:not(:last-child) {
