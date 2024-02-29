@@ -145,25 +145,25 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  // border: 1px solid purple;
 }
 .card__heart {
   stroke: $color-primary-red;
 }
 // styling the warning text
 .warning {
-  width: 100%;
-  margin: 2rem auto;
+  margin: 2rem 0;
 
   &__text {
-    width: 100%;
-    height: auto;
+    margin: auto;
     display: flex;
     flex-direction: column;
     color: rgba($color-dark, $alpha: 0.9);
-    font-size: 1.2rem;
+    font-size: 1.15rem;
 
     span {
+      width: 100%;
+      height: auto;
+      box-sizing: border-box;
       &:not(:last-child) {
         margin-bottom: 1rem;
       }
