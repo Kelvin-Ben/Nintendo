@@ -1,41 +1,47 @@
 .updates {
-  width: 100%;
+  width: auto;
   height: $grid-height;
+  margin: 0 auto;
+  padding: 2rem;
 }
 .status {
   display: flex;
   flex-direction: column;
   list-style: none;
-  width: 100%;
+  width: auto;
   height: 100%;
   margin: 0rem auto;
 
   &__list {
     display: flex;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
-    height: 5rem;
+    min-height: 5rem;
     border-top: 1px solid rgba($color-dark, $alpha: 0.3);
     &:last-child {
       border-bottom: 1px solid rgba($color-dark, $alpha: 0.3);
     }
+    strong {
+      font-weight: 800;
+      width: 30%;
+    }
     p {
-      font-size: 1.3rem;
-      font-family: "Rubik";
-      font-style: normal;
+      width: 60%;
+      font-size: 1.5rem;
+      font-family: "Rubik", sans-serif;
     }
     &--link {
-      width: 30rem;
+      width: 60%;
       font-size: 1.2rem;
       font-weight: 600;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
 
       a {
         text-decoration: none;
         color: $color-primary-red;
-        border-bottom: 1px solid;
+        text-decoration: underline 2px;
+        text-underline-offset: 6px;
         &:hover {
           color: $color-primary-red-dark;
         }
@@ -47,7 +53,7 @@
   display: flex;
   align-items: center;
   width: 22rem;
-  margin-right: $margin-right;
+
   &__icon {
     margin-right: 1.5rem;
   }
@@ -56,5 +62,14 @@
   }
 }
 .genre {
-  width: 16rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 19rem;
+}
+.players {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 37rem;
 }
