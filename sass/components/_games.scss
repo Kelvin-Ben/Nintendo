@@ -1,24 +1,25 @@
 .more-games {
   max-width: $grid-width;
-  height: 40rem;
-  // border: 1px solid purple;
+  height: auto;
+  padding: 0 2rem;
 }
 .games-container {
   width: 100%;
-  height: 32rem;
-  // border: 1px solid red;
+  margin: 0 auto;
+  height: 38rem;
   position: relative;
   list-style-type: none;
   display: flex;
   justify-content: center;
+  margin-bottom: 5rem;
 
   &__button--left {
     position: absolute;
     z-index: 1;
     background-color: rgba($color-dark, 0.6);
     opacity: 0.6;
-    height: 32rem;
-    width: 5rem;
+    height: 100%;
+    width: 6.6rem;
     border-radius: 1rem;
     border: none;
     transition: background-color 0.3s ease, opacity 0.3s ease;
@@ -38,8 +39,8 @@
     z-index: 1;
     background-color: rgba($color-dark, 0.6);
     opacity: 0.6;
-    height: 32rem;
-    width: 5rem;
+    height: 100%;
+    width: 6.6rem;
     border-radius: 1rem;
     border: none;
     transition: background-color 0.3s ease, opacity 0.5s ease;
@@ -55,15 +56,16 @@
   }
 }
 .card-container {
-  width: 90%;
-  height: 95%;
-  margin: auto;
+  width: 95%;
+  height: 100%;
+  margin: auto 0;
   display: grid;
   grid-template-columns: repeat(17, 1fr);
   gap: 3rem;
   align-content: center;
   overflow: hidden;
   transition: transform 0.3s ease-in-out;
+  padding: 1rem;
 }
 .navigation--icon {
   transition: transform 0.3s ease;
@@ -74,16 +76,15 @@
   left: 0;
 }
 .card {
-  width: 22rem;
-  height: 18%;
-  margin: auto;
-  border: 0.5px solid rgba($color-dark, 0.3);
+  width: 26rem;
+  height: 33rem;
+  border: 0.5px solid rgba($color-dark, 0.2);
   border-radius: 1.5rem;
   border-top: none;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  transition: transform 0.3s ease;
+  // transition: all ease;
 
   &:hover {
     cursor: pointer;
@@ -96,11 +97,12 @@
   }
 
   &__image {
-    // width: 100%;
     height: 45%;
     border-top-left-radius: inherit;
     border-top-right-radius: inherit;
-    transition: transform 0.4s ease-out;
+    transition: transform 0.3s ease-out;
+
+    border-top: 0.5px solid rgba($color-dark, 0.15);
   }
   &__about {
     width: 90%;
