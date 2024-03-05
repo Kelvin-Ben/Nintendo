@@ -13,7 +13,7 @@
   border-radius: 2px;
 }
 @mixin respond($breakpoint) {
-  @if $breakpoint == phone { 
+  @if $breakpoint == phone {
     @media only screen and (max-width: 37.5em) {
       @content;
     }
@@ -28,8 +28,13 @@
       @content;
     }
   }
+  @if $breakpoint == small-laptop {
+    @media only screen and (max-width: 77.5em) {
+      @content;
+    }
+  }
   @if $breakpoint == laptop {
-    @media  only screen and (min-width: 77.5em) {
+    @media only screen and (min-width: 77.5em) {
       @content;
     }
   }
