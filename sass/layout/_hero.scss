@@ -2,7 +2,11 @@
   background-color: $color-cyan-light;
   position: relative;
   z-index: 1;
-  // border: 1px solid red;
+  @include respond(small-laptop) {
+    background-color: transparent;
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 .intro {
   width: $grid-width;
@@ -13,6 +17,13 @@
   box-shadow: 0rem 0.5rem 2rem rgba($color-dark, $alpha: 0.2);
   border-radius: 10px; // make this border-radius a variable
   transform: translateY(3rem);
+
+  @include respond(small-laptop) {
+    transform: translateY(0rem);
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+  }
 }
 #stardew-valley {
   width: 98%;
@@ -21,6 +32,10 @@
   justify-content: space-between;
   flex-direction: row;
   margin: 0.5rem auto;
+  @include respond(small-laptop) {
+    width: 100%;
+    height: 50rem;
+  }
 }
 .breadcrumb {
   display: flex;
