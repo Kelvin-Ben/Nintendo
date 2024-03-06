@@ -19,12 +19,12 @@
     }
   }
   @if $breakpoint == potrait {
-    @media only screen and (max-width: 56.25em) {
+    @media only screen and (max-width: 64.0625em) {
       @content;
     }
   }
   @if $breakpoint == land {
-    @media only screen and (max-width: 75em) {
+    @media only screen and (min-width: 64.0625em) {
       @content;
     }
   }
