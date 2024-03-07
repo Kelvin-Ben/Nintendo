@@ -175,6 +175,9 @@ h3 {
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 1rem; }
+  @media only screen and (max-width: 64.0625em) {
+    .header {
+      display: none; } }
 
 .upper-nav {
   display: flex;
@@ -344,10 +347,16 @@ h3 {
   align-items: center;
   justify-content: space-between;
   margin: 0 auto; }
+  @media only screen and (max-width: 64.0625em) {
+    .lower {
+      width: 100%; } }
 
 .nav__shipping {
   font-size: 1.5rem;
   font-weight: 400; }
+  @media only screen and (max-width: 64.0625em) {
+    .nav__shipping {
+      display: none; } }
   .nav__shipping--text {
     display: flex;
     flex-direction: row;
@@ -363,6 +372,10 @@ h3 {
 .nav__points {
   font-size: 1.5rem;
   font-weight: 400; }
+  @media only screen and (max-width: 64.0625em) {
+    .nav__points {
+      width: auto;
+      margin: 0 auto; } }
   .nav__points--text {
     display: flex;
     flex-direction: row;
@@ -376,29 +389,92 @@ h3 {
     width: 2rem;
     margin: 0 0.5rem; }
 
+.nintendo {
+  display: none;
+  width: 100%;
+  height: 6rem;
+  background-color: #e60012; }
+  @media only screen and (max-width: 64.0625em) {
+    .nintendo {
+      display: block; } }
+  .nintendo__logo {
+    width: 15rem;
+    cursor: pointer; }
+  .nintendo__store {
+    display: flex;
+    justify-content: space-around;
+    width: 20rem; }
+
+.nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; }
+
+.flag {
+  margin: auto 0;
+  width: 3rem;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  cursor: pointer; }
+
+.icon {
+  width: 2rem;
+  fill: #fff; }
+
+.text {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.3rem;
+  color: #fff;
+  font-weight: 600; }
+
 .carousel {
   position: relative;
-  width: 57%;
+  max-width: 57%;
   height: 100%;
   overflow-x: hidden;
   display: flex;
   flex-direction: column; }
+  @media only screen and (max-width: 77.5em) {
+    .carousel {
+      max-width: 57%;
+      height: auto; } }
   .carousel__track {
     width: 100%;
     height: 100%;
     list-style: none;
     position: relative;
     transition: transform 0.7s ease-in-out; }
+    @media only screen and (max-width: 64.0625em) {
+      .carousel__track {
+        width: 100%; } }
+    @media only screen and (min-width: 64.0625em) {
+      .carousel__track {
+        width: 100%; } }
+    @media only screen and (max-width: 77.5em) {
+      .carousel__track {
+        width: 100%; } }
   .carousel__slide {
     position: absolute;
     top: 0;
     bottom: 0;
     width: 100%; }
+    @media only screen and (max-width: 77.5em) {
+      .carousel__slide {
+        width: 100%; } }
   .carousel__image {
     object-fit: cover;
     width: 100%;
     height: 100%;
     border-radius: 2rem; }
+    @media only screen and (max-width: 77.5em) {
+      .carousel__image {
+        width: 100%; } }
+    @media only screen and (min-width: 77.5em) {
+      .carousel__image {
+        width: 100%; } }
   .carousel__indicator {
     width: 9rem;
     height: 5rem;
@@ -530,6 +606,9 @@ h3 {
   flex-direction: row;
   align-items: center;
   justify-content: space-between; }
+  @media only screen and (max-width: 77.5em) {
+    .esrb {
+      width: 80%; } }
   .esrb__image {
     width: 5rem; }
   .esrb__text {
@@ -1093,6 +1172,11 @@ h3 {
   background-color: #d6f0fa;
   position: relative;
   z-index: 1; }
+  @media only screen and (max-width: 77.5em) {
+    #hero {
+      background-color: transparent;
+      width: 100%;
+      margin: 0 auto; } }
 
 .intro {
   width: 120rem;
@@ -1103,6 +1187,12 @@ h3 {
   box-shadow: 0rem 0.5rem 2rem rgba(67, 66, 66, 0.2);
   border-radius: 10px;
   transform: translateY(3rem); }
+  @media only screen and (max-width: 77.5em) {
+    .intro {
+      transform: translateY(0rem);
+      width: 95%;
+      height: auto;
+      margin: 0 auto; } }
 
 #stardew-valley {
   width: 98%;
@@ -1111,6 +1201,10 @@ h3 {
   justify-content: space-between;
   flex-direction: row;
   margin: 0.5rem auto; }
+  @media only screen and (max-width: 77.5em) {
+    #stardew-valley {
+      width: 100%;
+      height: 50rem; } }
 
 .breadcrumb {
   display: flex;
