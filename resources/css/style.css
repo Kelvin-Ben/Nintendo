@@ -175,7 +175,7 @@ h3 {
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 1rem; }
-  @media only screen and (max-width: 64.0625em) {
+  @media only screen and (max-width: 56.25em) {
     .header {
       display: none; } }
 
@@ -347,14 +347,14 @@ h3 {
   align-items: center;
   justify-content: space-between;
   margin: 0 auto; }
-  @media only screen and (max-width: 64.0625em) {
+  @media only screen and (max-width: 56.25em) {
     .lower {
       width: 100%; } }
 
 .nav__shipping {
   font-size: 1.5rem;
   font-weight: 400; }
-  @media only screen and (max-width: 64.0625em) {
+  @media only screen and (max-width: 56.25em) {
     .nav__shipping {
       display: none; } }
   .nav__shipping--text {
@@ -372,7 +372,7 @@ h3 {
 .nav__points {
   font-size: 1.5rem;
   font-weight: 400; }
-  @media only screen and (max-width: 64.0625em) {
+  @media only screen and (max-width: 56.25em) {
     .nav__points {
       width: auto;
       margin: 0 auto; } }
@@ -394,7 +394,7 @@ h3 {
   width: 100%;
   height: 6rem;
   background-color: #e60012; }
-  @media only screen and (max-width: 64.0625em) {
+  @media only screen and (max-width: 56.25em) {
     .nintendo {
       display: block; } }
   .nintendo__logo {
@@ -447,10 +447,10 @@ h3 {
     list-style: none;
     position: relative;
     transition: transform 0.7s ease-in-out; }
-    @media only screen and (max-width: 64.0625em) {
+    @media only screen and (max-width: 56.25em) {
       .carousel__track {
         width: 100%; } }
-    @media only screen and (min-width: 64.0625em) {
+    @media only screen and (max-width: 64.0625em) {
       .carousel__track {
         width: 100%; } }
     @media only screen and (max-width: 77.5em) {
@@ -805,6 +805,9 @@ h3 {
   width: 120rem;
   height: auto;
   display: flex; }
+  @media only screen and (max-width: 77.5em) {
+    #online {
+      width: auto; } }
 
 .online {
   width: 100%;
@@ -992,7 +995,10 @@ h3 {
   stroke: #e60012; }
 
 .warning {
-  margin: 2rem 0; }
+  padding: 1rem 2rem; }
+  @media only screen and (max-width: 77.5em) {
+    .warning {
+      width: 100%; } }
   .warning__text {
     margin: auto;
     display: flex;
@@ -1012,11 +1018,17 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
+  @media only screen and (max-width: 56.25em) {
+    .footer {
+      height: auto; } }
   .footer__top {
     height: 11rem;
     background-color: #e60012;
     display: flex;
     width: 100%; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__top {
+        height: 20rem; } }
     .footer__top div {
       width: 80%;
       height: 100%;
@@ -1024,9 +1036,24 @@ h3 {
       display: flex;
       flex-direction: row;
       justify-content: space-between; }
+      @media only screen and (max-width: 77.5em) {
+        .footer__top div {
+          width: 100%; } }
+      @media only screen and (max-width: 56.25em) {
+        .footer__top div {
+          width: 100%;
+          height: 100%;
+          border: 1px solid black;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-around; } }
       .footer__top div img {
         margin: auto 0;
         height: 70%; }
+        @media only screen and (max-width: 56.25em) {
+          .footer__top div img {
+            height: 100%; } }
   .footer__middle {
     height: auto;
     width: 100%;
@@ -1034,11 +1061,17 @@ h3 {
     display: flex;
     flex-direction: column;
     justify-content: space-between; }
+    @media only screen and (max-width: 77.5em) {
+      .footer__middle {
+        width: 100%; } }
   .footer__bottom {
     width: 100%;
     height: 10rem;
     background-color: rgba(0, 0, 0, 0.86);
     font-size: 1.24rem; }
+    @media only screen and (max-width: 64.0625em) {
+      .footer__bottom {
+        height: 30rem; } }
     .footer__bottom div {
       width: 80%;
       height: inherit;
@@ -1047,8 +1080,28 @@ h3 {
       align-items: center;
       justify-content: space-between;
       margin: auto; }
+      @media only screen and (max-width: 77.5em) {
+        .footer__bottom div {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          width: 100%; } }
+      @media only screen and (max-width: 64.0625em) {
+        .footer__bottom div {
+          width: 60%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around; } }
   .footer__text {
+    font-weight: 400;
     color: #fff; }
+    @media only screen and (min-width: 77.5em) {
+      .footer__text {
+        height: auto; } }
+    @media only screen and (max-width: 64.0625em) {
+      .footer__text {
+        width: 80%;
+        text-align: center; } }
 
 .contact {
   display: flex;
@@ -1057,6 +1110,20 @@ h3 {
   justify-content: space-around;
   width: 60rem;
   list-style-type: none; }
+  @media only screen and (min-width: 77.5em) {
+    .contact {
+      height: auto; } }
+  @media only screen and (max-width: 64.0625em) {
+    .contact {
+      height: 10rem;
+      flex-direction: column;
+      width: 100%;
+      font-weight: 600; } }
+  @media only screen and (max-width: 64.0625em) {
+    .contact__details {
+      width: 80%;
+      display: flex;
+      justify-content: space-between; } }
   .contact__list {
     display: flex;
     flex-direction: row;
@@ -1084,6 +1151,9 @@ h3 {
   align-items: center;
   justify-content: space-around;
   list-style: none; }
+  @media only screen and (max-width: 77.5em) {
+    .social-media {
+      width: 40%; } }
 
 .media-icon {
   width: 3rem;
@@ -1097,6 +1167,10 @@ h3 {
   justify-content: space-between;
   margin: 0 auto;
   padding: 1rem; }
+  @media only screen and (max-width: 77.5em) {
+    .services {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); } }
   .services__about, .services__shop, .services__store, .services__support, .services__combined, .services__community {
     display: table-cell;
     width: 20rem;
@@ -1107,6 +1181,10 @@ h3 {
     font-size: 1.3rem;
     font-weight: 700;
     border-left: 1px solid rgba(67, 66, 66, 0.2); }
+    @media only screen and (max-width: 77.5em) {
+      .services__about, .services__shop, .services__store, .services__support, .services__combined, .services__community {
+        border: none;
+        padding: 1rem 0; } }
     .services__about h3, .services__shop h3, .services__store h3, .services__support h3, .services__combined h3, .services__community h3 {
       margin-bottom: 1.4rem; }
       .services__about h3:hover, .services__shop h3:hover, .services__store h3:hover, .services__support h3:hover, .services__combined h3:hover, .services__community h3:hover {
@@ -1131,6 +1209,12 @@ h3 {
       font-weight: 700;
       display: table;
       width: 100%; }
+      @media only screen and (max-width: 77.5em) {
+        .services__related--parents, .services__related--privacy {
+          border: none;
+          display: flex;
+          flex-direction: column;
+          padding: 1rem 0; } }
       .services__related--parents h3, .services__related--privacy h3 {
         margin-bottom: 1.4rem; }
         .services__related--parents h3:hover, .services__related--privacy h3:hover {
@@ -1140,6 +1224,9 @@ h3 {
           text-decoration-thickness: 2px; }
     .services__related--privacy {
       margin-top: 1rem; }
+      @media only screen and (max-width: 77.5em) {
+        .services__related--privacy {
+          margin-top: none; } }
 
 .list {
   margin-bottom: 0.7rem; }
@@ -1267,6 +1354,9 @@ h3 {
   width: 120rem;
   height: auto;
   margin: 10rem auto 5rem auto; }
+  @media only screen and (max-width: 77.5em) {
+    .main {
+      width: 100%; } }
 
 .stardew-intro {
   display: flex;
