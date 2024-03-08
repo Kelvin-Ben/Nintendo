@@ -2,6 +2,9 @@
   width: $grid-width;
   height: auto;
   display: flex;
+  @include respond(small-laptop) {
+    width: auto;
+  }
 }
 .online {
   width: 100%;
