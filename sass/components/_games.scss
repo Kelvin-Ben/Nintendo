@@ -153,7 +153,10 @@
 }
 // styling the warning text
 .warning {
-  margin: 2rem 0;
+  padding: 1rem 2rem;
+  @include respond(small-laptop) {
+    width: 100%;
+  }
 
   &__text {
     margin: auto;
