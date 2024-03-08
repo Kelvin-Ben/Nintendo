@@ -1,8 +1,10 @@
 .main {
   width: $grid-width;
   height: auto;
-
   margin: 10rem auto 5rem auto;
+  @include respond(small-laptop) {
+    width: 100%;
+  }
 }
 .stardew-intro {
   display: flex;
