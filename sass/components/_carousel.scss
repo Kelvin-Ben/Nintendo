@@ -9,6 +9,11 @@
     max-width: 57%;
     height: auto;
   }
+  @include respond(phone) {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+  }
 
   &__track {
     width: 100%;
@@ -16,15 +21,20 @@
     list-style: none;
     position: relative;
     transition: transform 0.7s ease-in-out;
-    
-    @include respond(potrait) {
+    @include respond(small-laptop) {
       width: 100%;
     }
     @include respond(land) {
       width: 100%;
     }
-    @include respond(small-laptop) {
+    @include respond(potrait) {
       width: 100%;
+    }
+    
+    // not yet
+    @include respond(phone) {
+      width: 100%;
+      height: 30rem;
     }
   }
   &__slide {
@@ -207,6 +217,9 @@
   justify-content: space-between;
   @include respond(small-laptop) {
     width: 80%;
+  }
+  @include respond(phone) {
+    display: none;
   }
 
   &__image {
