@@ -405,14 +405,6 @@ h3 {
     justify-content: space-around;
     width: 20rem; }
 
-.nav {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between; }
-
 .flag {
   margin: auto 0;
   width: 3rem;
@@ -441,21 +433,30 @@ h3 {
     .carousel {
       max-width: 57%;
       height: auto; } }
+  @media only screen and (max-width: 43.75em) {
+    .carousel {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid red; } }
   .carousel__track {
     width: 100%;
     height: 100%;
     list-style: none;
     position: relative;
     transition: transform 0.7s ease-in-out; }
-    @media only screen and (max-width: 56.25em) {
+    @media only screen and (max-width: 77.5em) {
       .carousel__track {
         width: 100%; } }
     @media only screen and (max-width: 64.0625em) {
       .carousel__track {
         width: 100%; } }
-    @media only screen and (max-width: 77.5em) {
+    @media only screen and (max-width: 56.25em) {
       .carousel__track {
         width: 100%; } }
+    @media only screen and (max-width: 43.75em) {
+      .carousel__track {
+        width: 100%;
+        height: 30rem; } }
   .carousel__slide {
     position: absolute;
     top: 0;
@@ -609,6 +610,9 @@ h3 {
   @media only screen and (max-width: 77.5em) {
     .esrb {
       width: 80%; } }
+  @media only screen and (max-width: 43.75em) {
+    .esrb {
+      display: none; } }
   .esrb__image {
     width: 5rem; }
   .esrb__text {
@@ -1280,6 +1284,12 @@ h3 {
       width: 95%;
       height: auto;
       margin: 0 auto; } }
+  @media only screen and (max-width: 43.75em) {
+    .intro {
+      width: 95%;
+      border: 1px solid red;
+      height: auto;
+      padding: 0; } }
 
 #stardew-valley {
   width: 98%;
@@ -1292,6 +1302,14 @@ h3 {
     #stardew-valley {
       width: 100%;
       height: 50rem; } }
+  @media only screen and (max-width: 43.75em) {
+    #stardew-valley {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      border: 1px solid black; } }
 
 .breadcrumb {
   display: flex;
@@ -1312,6 +1330,10 @@ h3 {
 
 .stardew--price {
   width: 40%; }
+  @media only screen and (max-width: 43.75em) {
+    .stardew--price {
+      width: 100%;
+      border: 1px solid red; } }
 
 .stardew-text {
   text-transform: capitalize;
@@ -1367,8 +1389,8 @@ h3 {
   padding: 2rem; }
   .stardew-intro__image {
     display: block;
-    width: 48%;
-    height: 30rem;
+    width: 46%;
+    height: 28rem;
     border-radius: 1rem; }
 
 .moving {
@@ -1376,7 +1398,7 @@ h3 {
 
 .btn-explore {
   height: 5rem;
-  width: 70%;
+  width: 35rem;
   margin-bottom: 2rem;
   font-size: 1.4rem; }
 
